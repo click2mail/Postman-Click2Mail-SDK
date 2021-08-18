@@ -1,0 +1,49 @@
+{
+	"id": "a5d1e166-7e94-4749-80e2-484209503a37",
+	"values": [
+		{
+			"key": "jobId",
+			"value": "0",
+			"enabled": true
+		},
+		{
+			"key": "front_docId",
+			"value": "0",
+			"enabled": true
+		},
+		{
+			"key": "back_docId",
+			"value": "0",
+			"enabled": true
+		},
+		{
+			"key": "docId",
+			"value": "0",
+			"enabled": true
+		},
+		{
+			"key": "addressListId",
+			"value": "0",
+			"enabled": true
+		},
+		{
+			"key": "sessionId",
+			"value": "0",
+			"enabled": true
+		},
+		{
+			"key": "email",
+			"value": "joe@company.com",
+			"enabled": true
+		},
+		{
+			"key": "proofId",
+			"value": "0",
+			"enabled": true
+		}
+	],
+	"name": "My Workspace Globals",
+	"_postman_variable_scope": "globals",
+	"_postman_exported_at": "2021-07-08T14:54:27.639Z",
+	"_postman_exported_using": "Postman/8.1.0"
+}

@@ -1,0 +1,6730 @@
+{
+	"info": {
+		"_postman_id": "b1cf85f5-f04f-4f30-8c24-266319d46555",
+		"name": "C2M REST APIs -- Reference for C2M Users",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Account",
+			"item": [
+				{
+					"name": "/molpro/account/addresses (Return Address)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(200);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var status = responseJson[\"account\"][\"status\"];",
+									"    tests[\"status = \" + status] = true; // this is for printing value to console",
+									"    pm.expect(status).to.eql(\"0\");",
+									"",
+									"    var description = responseJson[\"account\"][\"description\"];",
+									"    tests[\"description = \" + description] = true; // this is for printing value to console",
+									"    pm.expect(description).to.eql(\"Success\");",
+									"    ",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "type",
+									"value": "Return address",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "TestAt{{$timestamp}}",
+									"type": "text"
+								},
+								{
+									"key": "address1",
+									"value": "3103 10th ST N, Suite 201",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "Arlington",
+									"type": "text"
+								},
+								{
+									"key": "state",
+									"value": "VA",
+									"type": "text"
+								},
+								{
+									"key": "zip",
+									"value": "22201",
+									"type": "text"
+								},
+								{
+									"key": "firstName",
+									"value": "Joe",
+									"type": "text"
+								},
+								{
+									"key": "middleName",
+									"value": "Ken",
+									"type": "text"
+								},
+								{
+									"key": "lastName",
+									"value": "Smith",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/account/addresses",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"account",
+								"addresses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/molpro/account/authorize",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(200);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var status = responseJson[\"account\"][\"status\"];",
+									"    tests[\"status = \" + status] = true; // this is for printing value to console",
+									"    pm.expect(status).to.eql(\"0\");",
+									"",
+									"    var description = responseJson[\"account\"][\"description\"];",
+									"    tests[\"description = \" + description] = true; // this is for printing value to console",
+									"    pm.expect(description).to.eql(\"Success\");",
+									"    ",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/account/authorize",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"account",
+								"authorize"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/molpro/account/addresses (Billing Address)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(200);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var status = responseJson[\"account\"][\"status\"];",
+									"    tests[\"status = \" + status] = true; // this is for printing value to console",
+									"    pm.expect(status).to.eql(\"0\");",
+									"",
+									"    var description = responseJson[\"account\"][\"description\"];",
+									"    tests[\"description = \" + description] = true; // this is for printing value to console",
+									"    pm.expect(description).to.eql(\"Success\");",
+									"    ",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "type",
+									"value": "Billing address",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "TestAt{{$timestamp}}",
+									"type": "text"
+								},
+								{
+									"key": "address1",
+									"value": "3103 10th ST N, Suite 201",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "Arlington",
+									"type": "text"
+								},
+								{
+									"key": "state",
+									"value": "VA",
+									"type": "text"
+								},
+								{
+									"key": "zip",
+									"value": "22201",
+									"type": "text"
+								},
+								{
+									"key": "firstName",
+									"value": "Joe",
+									"type": "text"
+								},
+								{
+									"key": "middleName",
+									"value": "Ken",
+									"type": "text"
+								},
+								{
+									"key": "lastName",
+									"value": "Smith",
+									"type": "text"
+								},
+								{
+									"key": "makeDefault",
+									"value": "yes",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/account/addresses",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"account",
+								"addresses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/molpro/account/addresses (Business Reply)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(200);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var status = responseJson[\"account\"][\"status\"];",
+									"    tests[\"status = \" + status] = true; // this is for printing value to console",
+									"    pm.expect(status).to.eql(\"0\");",
+									"",
+									"    var description = responseJson[\"account\"][\"description\"];",
+									"    tests[\"description = \" + description] = true; // this is for printing value to console",
+									"    pm.expect(description).to.eql(\"Success\");",
+									"    ",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "type",
+									"value": "Business reply",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "TestAt{{$timestamp}}",
+									"type": "text"
+								},
+								{
+									"key": "address1",
+									"value": "3103 10th ST N, Suite 201",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "Arlington",
+									"type": "text"
+								},
+								{
+									"key": "state",
+									"value": "VA",
+									"type": "text"
+								},
+								{
+									"key": "zip",
+									"value": "22201",
+									"type": "text"
+								},
+								{
+									"key": "firstName",
+									"value": "Joe",
+									"type": "text"
+								},
+								{
+									"key": "middleName",
+									"value": "Ken",
+									"type": "text"
+								},
+								{
+									"key": "lastName",
+									"value": "Smith",
+									"type": "text"
+								},
+								{
+									"key": "makeDefault",
+									"value": "yes",
+									"type": "text"
+								},
+								{
+									"key": "organization",
+									"value": "C2M LLC",
+									"type": "text"
+								},
+								{
+									"key": "replyCity",
+									"value": "Arlington",
+									"type": "text"
+								},
+								{
+									"key": "replyRegionId",
+									"value": "12345",
+									"type": "text"
+								},
+								{
+									"key": "permitNumber",
+									"value": "98765",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/account/addresses",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"account",
+								"addresses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/molpro/account/addresses (Courtesy Reply Address)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(200);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var status = responseJson[\"account\"][\"status\"];",
+									"    tests[\"status = \" + status] = true; // this is for printing value to console",
+									"    pm.expect(status).to.eql(\"0\");",
+									"",
+									"    var description = responseJson[\"account\"][\"description\"];",
+									"    tests[\"description = \" + description] = true; // this is for printing value to console",
+									"    pm.expect(description).to.eql(\"Success\");",
+									"    ",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "type",
+									"value": "Courtesy reply address",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "TestAt{{$timestamp}}",
+									"type": "text"
+								},
+								{
+									"key": "address1",
+									"value": "3103 10th ST N, Suite 201",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "Arlington",
+									"type": "text"
+								},
+								{
+									"key": "state",
+									"value": "VA",
+									"type": "text"
+								},
+								{
+									"key": "zip",
+									"value": "22201",
+									"type": "text"
+								},
+								{
+									"key": "firstName",
+									"value": "Joe",
+									"type": "text"
+								},
+								{
+									"key": "middleName",
+									"value": "Ken",
+									"type": "text"
+								},
+								{
+									"key": "lastName",
+									"value": "Smith",
+									"type": "text"
+								},
+								{
+									"key": "makeDefault",
+									"value": "yes",
+									"type": "text"
+								},
+								{
+									"key": "organization",
+									"value": "C2M LLC",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/account/addresses",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"account",
+								"addresses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/molpro/account/addresses (Eddm Mailer Address)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(200);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var status = responseJson[\"account\"][\"status\"];",
+									"    tests[\"status = \" + status] = true; // this is for printing value to console",
+									"    pm.expect(status).to.eql(\"0\");",
+									"",
+									"    var description = responseJson[\"account\"][\"description\"];",
+									"    tests[\"description = \" + description] = true; // this is for printing value to console",
+									"    pm.expect(description).to.eql(\"Success\");",
+									"    ",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "type",
+									"value": "EDDM Mailer address",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "TestAt{{$timestamp}}",
+									"type": "text"
+								},
+								{
+									"key": "address1",
+									"value": "3103 10th ST N, Suite 201",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "Arlington",
+									"type": "text"
+								},
+								{
+									"key": "state",
+									"value": "VA",
+									"type": "text"
+								},
+								{
+									"key": "zip",
+									"value": "22201",
+									"type": "text"
+								},
+								{
+									"key": "firstName",
+									"value": "Joe",
+									"type": "text"
+								},
+								{
+									"key": "middleName",
+									"value": "Ken",
+									"type": "text"
+								},
+								{
+									"key": "lastName",
+									"value": "Smith",
+									"type": "text"
+								},
+								{
+									"key": "makeDefault",
+									"value": "yes",
+									"type": "text"
+								},
+								{
+									"key": "organization",
+									"value": "C2M LLC",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "703-521-9029",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/account/addresses",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"account",
+								"addresses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/molpro/account/addresses",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(200);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var status = responseJson[\"job\"][\"status\"];",
+									"    tests[\"status = \" + status] = true; // this is for printing value to console",
+									"    pm.expect(status).to.eql(\"0\");",
+									"",
+									"    var description = responseJson[\"job\"][\"description\"];",
+									"    tests[\"description = \" + description] = true; // this is for printing value to console",
+									"    pm.expect(description).to.eql(\"Success\");",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Auth-UserId",
+								"value": "4f1427791d4891001abebd20853163fa",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/account/addresses?addressType=Courtesy reply address",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"account",
+								"addresses"
+							],
+							"query": [
+								{
+									"key": "addressType",
+									"value": "Courtesy reply address"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Address",
+			"item": []
+		},
+		{
+			"name": "AddressBook",
+			"item": []
+		},
+		{
+			"name": "AddressCorrection",
+			"item": [
+				{
+					"name": "/molpro/addressCorrection",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(200);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var status = responseJson[\"addressCorrection\"][\"status\"];",
+									"    tests[\"status = \" + status] = true; // this is for printing value to console",
+									"    pm.expect(status).to.eql(\"0\");",
+									"",
+									"    var description = responseJson[\"addressCorrection\"][\"description\"];",
+									"    tests[\"description = \" + description] = true; // this is for printing value to console",
+									"    pm.expect(description).to.eql(\"Success\");",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<addresses>\n   <address>\n      <name>Joe Smith</name>\n      <address1>3103 10th ST N, Suite 201</address1>\n      <city>Arlington</city>\n      <state>VA</state>\n      <zip>22201</zip>\n   </address>\n   <address>\n      <name>Joe Balley</name>\n      <address1>3103 10th ST N, Suite 201</address1>\n      <city>Sockville</city>\n      <state>VA</state>\n      <zip>22201</zip>\n   </address>\n   <address>\n      <name>Anto Nee</name>\n      <city>Capsi</city>\n      <state>DD</state>\n      <zip>FDGCD</zip>\n   </address>\n   <address>\n      <name>Jenny Hill</name>\n      <address1>3000 Homestead Ave</address1>\n      <city>Holyoke</city>\n      <state>MA</state>\n      <postalCode>01040</postalCode>\n   </address>\n   <address>\n      <name>Jane Hise</name>\n      <address1>100 Covery</address1>\n      <city>Carbona</city>\n      <state>DF</state>\n      <zip>12 AB345</zip>\n   </address>\n   <address>\n      <name>Claire LaRouge</name>\n      <address1>69 Saint Louis</address1>\n      <city>Québec</city>\n      <state>QC</state>\n      <zip>G1R 3Z2</zip>\n   </address>\n   <address>\n      <name>Claire LaRouge</name>\n      <address1>69 Saint Louis</address1>\n      <city>Québec</city>\n      <state>QC</state>\n      <zip>G1R 3Z2</zip>\n      <country>CANADA</country>\n   </address>\n</addresses>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/addressCorrection",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"addressCorrection"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "AddressLists",
+			"item": [
+				{
+					"name": "/molpro/addressLists (1 addr)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(200);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var status = responseJson[\"addressList\"][\"status\"];",
+									"    tests[\"status = \" + status] = true; // this is for printing value to console",
+									"    pm.expect(status).to.eql(\"3\");",
+									"",
+									"    var description = responseJson[\"addressList\"][\"description\"];",
+									"    tests[\"description = \" + description] = true; // this is for printing value to console",
+									"    pm.expect(description).to.eql(\"CASS Standardized\");",
+									"    ",
+									"    var addressListId = responseJson[\"addressList\"][\"id\"];",
+									"    postman.setGlobalVariable(\"addressListId\", addressListId) ",
+									"    tests[\"addressListId = \" + addressListId] = true; // this is for printing value to console",
+									"    ",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/xml"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/xml"
+							},
+							{
+								"key": "user-agent",
+								"type": "text",
+								"value": "my-app/0.0.1"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<addressList>\n  <addressListName>Test by C2M</addressListName>\n  <addressMappingId>1</addressMappingId>\n  <addresses>\n    <address>\n        <Firstname> Attn: Civil Process</Firstname>\n        <Lastname></Lastname>\n        <Organization>Allen County Sheriff</Organization>\n        <Address1>715 S Calhoun St ROOM 100</Address1>\n        <Address2></Address2>\n        <Address3></Address3>\n        <City>Fort Wayne</City>\n        <State>IN</State>\n        <Postalcode>52102</Postalcode>\n        <Country></Country>\n    </address>\n  </addresses>\n  </addressList>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/addressLists",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"addressLists"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/molpro/addressLists (1 addr) Pete",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(200);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var status = responseJson[\"addressList\"][\"status\"];",
+									"    tests[\"status = \" + status] = true; // this is for printing value to console",
+									"    pm.expect(status).to.eql(\"3\");",
+									"",
+									"    var description = responseJson[\"addressList\"][\"description\"];",
+									"    tests[\"description = \" + description] = true; // this is for printing value to console",
+									"    pm.expect(description).to.eql(\"CASS Standardized\");",
+									"    ",
+									"    var addressListId = responseJson[\"addressList\"][\"id\"];",
+									"    postman.setGlobalVariable(\"addressListId\", addressListId) ",
+									"    tests[\"addressListId = \" + addressListId] = true; // this is for printing value to console",
+									"    ",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/xml"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/xml"
+							},
+							{
+								"key": "user-agent",
+								"type": "text",
+								"value": "my-app/0.0.1"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<addressList>\n  <addressListName>Test for Pete</addressListName>\n  <addressMappingId>2012</addressMappingId>\n  <addresses>\n    <address>\n        <Name>Pete</Name>\n        <Street>715 S Calhoun St ROOM 100</Street>\n        <City>Fort Wayne</City>\n        <State>IN</State>\n        <Zip>52102</Zip>\n        <provider_site_name>Sunrise Associates LLC</provider_site_name>\n    </address>\n  </addresses>\n  </addressList>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/addressLists",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"addressLists"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/molpro/addressLists (2 addrs)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(200);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var status = responseJson[\"addressList\"][\"status\"];",
+									"    tests[\"status = \" + status] = true; // this is for printing value to console",
+									"    pm.expect(status).to.eql(\"3\");",
+									"",
+									"    var description = responseJson[\"addressList\"][\"description\"];",
+									"    tests[\"description = \" + description] = true; // this is for printing value to console",
+									"    pm.expect(description).to.eql(\"CASS Standardized\");",
+									"    ",
+									"    var addressListId = responseJson[\"addressList\"][\"id\"];",
+									"    postman.setGlobalVariable(\"addressListId\", addressListId) ",
+									"    tests[\"addressListId = \" + addressListId] = true; // this is for printing value to console",
+									"    ",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/xml",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text"
+							},
+							{
+								"key": "user-agent",
+								"value": "my-app/0.0.1",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<addressList>\n\t<addressListName>test_Alex</addressListName>\n\t<addressMappingId>2</addressMappingId>\n\t<addresses>\n\t\t<address>\n\t\t\t<First_name>Test</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>TestUK</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>14 Tottenham Court Road</Address1>\n\t\t\t<Address2>Room 67</Address2>\n\t\t\t<City>London</City>\n\t\t\t<State/>\n\t\t\t<Zip>W1T 1JY</Zip>\n\t\t\t<Country_non-US>UK</Country_non-US>\n\t\t</address>\n\t</addresses>\n</addressList>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/addressLists",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"addressLists"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/molpro/addressLists (CASS TEST)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(200);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var status = responseJson[\"addressList\"][\"status\"];",
+									"    tests[\"status = \" + status] = true; // this is for printing value to console",
+									"    pm.expect(status).to.eql(\"3\");",
+									"",
+									"    var description = responseJson[\"addressList\"][\"description\"];",
+									"    tests[\"description = \" + description] = true; // this is for printing value to console",
+									"    pm.expect(description).to.eql(\"CASS Standardized\");",
+									"    ",
+									"    var addressListId = responseJson[\"addressList\"][\"id\"];",
+									"    postman.setGlobalVariable(\"addressListId\", addressListId) ",
+									"    tests[\"addressListId = \" + addressListId] = true; // this is for printing value to console",
+									"    ",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/xml",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text"
+							},
+							{
+								"key": "user-agent",
+								"value": "my-app/0.0.1",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<addressList>\n\t<addressListName>test_Alex</addressListName>\n\t<addressMappingId>2</addressMappingId>\n\t<addresses>\n\t\t<address>\n\t\t\t<First_name>Macy</First_name>\n\t\t\t<Last_name>Mores</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Philip</First_name>\n\t\t\t<Last_name>Mores</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Sockville</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Claire</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>14 Tottenham Court Road</Address1>\n\t\t\t<Address2>Room 67</Address2>\n\t\t\t<City>London</City>\n\t\t\t<State/>\n\t\t\t<Zip>W1T 1JY</Zip>\n\t\t\t<Country_non-US>UK</Country_non-US>\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Claire</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>14 Tottenham Court Road</Address1>\n\t\t\t<Address2>Room 67</Address2>\n\t\t\t<City>London</City>\n\t\t\t<State/>\n\t\t\t<Zip>W1T 1JY</Zip>\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>FOO</First_name>\n\t\t\t<Last_name>BAR</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>ASDF</Address1>\n\t\t\t<Address2>1234</Address2>\n\t\t\t<City>HGTS</City>\n\t\t\t<State/>\n\t\t\t<Zip>W1T 1JY</Zip>\n\t\t</address>\n\t</addresses>\n</addressList>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/addressLists",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"addressLists"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/molpro/addressLists (20 addrs)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(200);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var status = responseJson[\"addressList\"][\"status\"];",
+									"    tests[\"status = \" + status] = true; // this is for printing value to console",
+									"    pm.expect(status).to.eql(\"3\");",
+									"",
+									"    var description = responseJson[\"addressList\"][\"description\"];",
+									"    tests[\"description = \" + description] = true; // this is for printing value to console",
+									"    pm.expect(description).to.eql(\"CASS Standardized\");",
+									"    ",
+									"    var addressListId = responseJson[\"addressList\"][\"id\"];",
+									"    postman.setGlobalVariable(\"addressListId\", addressListId) ",
+									"    tests[\"addressListId = \" + addressListId] = true; // this is for printing value to console",
+									"    ",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/xml"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/xml"
+							},
+							{
+								"key": "user-agent",
+								"type": "text",
+								"value": "my-app/0.0.1"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<addressList>\n\t<addressListName>test_Apr_01_2020</addressListName>\n\t<addressMappingId>2</addressMappingId>\n\t<addresses>\n\t\t<address>\n\t\t\t<First_name>Test</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Rockdville</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Test</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testthree</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testfour</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testfive</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testsix</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testseven</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testeight</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testnine</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testten</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testeleven</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testtwele</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testthirteen</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testfourteen</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testfifteen</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testsixteen</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testseventeen</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testeighteen</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testnineteen</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testtwenty</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t</addresses>\n</addressList>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/addressLists",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"addressLists"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/molpro/addressLists/info",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(200);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var status = responseJson[\"addressList\"][\"status\"];",
+									"    tests[\"status = \" + status] = true; // this is for printing value to console",
+									"    pm.expect(status).to.eql(\"3\");",
+									"",
+									"    var description = responseJson[\"addressList\"][\"description\"];",
+									"    tests[\"description = \" + description] = true; // this is for printing value to console",
+									"    pm.expect(description).to.eql(\"CASS Standardized\");",
+									"    ",
+									"    var addressListId = responseJson[\"addressList\"][\"id\"];",
+									"    postman.setGlobalVariable(\"addressListId\", addressListId) ",
+									"    tests[\"addressListId = \" + addressListId] = true; // this is for printing value to console",
+									"    ",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/xml"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/xml"
+							},
+							{
+								"key": "user-agent",
+								"type": "text",
+								"value": "my-app/0.0.1"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<addressList>\n\t<addressListName>test_Apr_01_2020</addressListName>\n\t<addressMappingId>2</addressMappingId>\n\t<addresses>\n\t\t<address>\n\t\t\t<First_name>Test</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Test</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testthree</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testfour</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testfive</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testsix</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testseven</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testeight</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testnine</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testten</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testeleven</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testtwele</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testthirteen</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testfourteen</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testfifteen</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testsixteen</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testseventeen</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testeighteen</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testnineteen</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testtwenty</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t</addresses>\n</addressList>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/addressLists/info?baseAddressListId={{addressListId}}",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"addressLists",
+								"info"
+							],
+							"query": [
+								{
+									"key": "baseAddressListId",
+									"value": "{{addressListId}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/molpro/addressLists/",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(200);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var status = responseJson[\"addressList\"][\"status\"];",
+									"    tests[\"status = \" + status] = true; // this is for printing value to console",
+									"    pm.expect(status).to.eql(\"3\");",
+									"",
+									"    var description = responseJson[\"addressList\"][\"description\"];",
+									"    tests[\"description = \" + description] = true; // this is for printing value to console",
+									"    pm.expect(description).to.eql(\"CASS Standardized\");",
+									"    ",
+									"    var addressListId = responseJson[\"addressList\"][\"id\"];",
+									"    postman.setGlobalVariable(\"addressListId\", addressListId) ",
+									"    tests[\"addressListId = \" + addressListId] = true; // this is for printing value to console",
+									"    ",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/xml"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/xml"
+							},
+							{
+								"key": "user-agent",
+								"type": "text",
+								"value": "my-app/0.0.1"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/addressLists/{{addressListId}}",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"addressLists",
+								"{{addressListId}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CostEstimate",
+			"item": [
+				{
+					"name": "/molpro/costEstimate (Letter)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(201);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var status = responseJson[\"job\"][\"status\"];",
+									"    tests[\"status = \" + status] = true; // this is for printing value to console",
+									"    pm.expect(status).to.eql(\"0\");",
+									"",
+									"    var description = responseJson[\"job\"][\"description\"];",
+									"    tests[\"description = \" + description] = true; // this is for printing value to console",
+									"    pm.expect(description).to.eql(\"Created\");",
+									"    ",
+									"    var jobId = responseJson[\"job\"][\"id\"];",
+									"    postman.setGlobalVariable(\"jobId\", jobId) ",
+									"    tests[\"jobId = \" + jobId] = true; // this is for printing value to console",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/costEstimate?documentClass=Letter 8.5 x 11&layout=Address on Separate Page&productionTime=Next Day&envelope=%2310 Double Window&color=Black and White&paperType=White 24%23&printOption=Printing One side&mailClass=First Class&quantity=1&nonStandardQuantity=1&internationalQuantity=1&numberOfPages=1&paymentType=User Credit",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"costEstimate"
+							],
+							"query": [
+								{
+									"key": "documentClass",
+									"value": "Letter 8.5 x 11"
+								},
+								{
+									"key": "layout",
+									"value": "Address on Separate Page"
+								},
+								{
+									"key": "productionTime",
+									"value": "Next Day"
+								},
+								{
+									"key": "envelope",
+									"value": "%2310 Double Window"
+								},
+								{
+									"key": "color",
+									"value": "Black and White"
+								},
+								{
+									"key": "paperType",
+									"value": "White 24%23"
+								},
+								{
+									"key": "printOption",
+									"value": "Printing One side"
+								},
+								{
+									"key": "mailClass",
+									"value": "First Class"
+								},
+								{
+									"key": "quantity",
+									"value": "1"
+								},
+								{
+									"key": "nonStandardQuantity",
+									"value": "1"
+								},
+								{
+									"key": "internationalQuantity",
+									"value": "1"
+								},
+								{
+									"key": "numberOfPages",
+									"value": "1"
+								},
+								{
+									"key": "paymentType",
+									"value": "User Credit"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/molpro/costEstimate (Double SIded Postcard)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(201);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var status = responseJson[\"job\"][\"status\"];",
+									"    tests[\"status = \" + status] = true; // this is for printing value to console",
+									"    pm.expect(status).to.eql(\"0\");",
+									"",
+									"    var description = responseJson[\"job\"][\"description\"];",
+									"    tests[\"description = \" + description] = true; // this is for printing value to console",
+									"    pm.expect(description).to.eql(\"Created\");",
+									"    ",
+									"    var jobId = responseJson[\"job\"][\"id\"];",
+									"    postman.setGlobalVariable(\"jobId\", jobId) ",
+									"    tests[\"jobId = \" + jobId] = true; // this is for printing value to console",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/costEstimate?documentClass=Postcard 4.25 x 6&layout=Double Sided Postcard&productionTime=Next Day&envelope=None&color=Full Color&paperType=White Matte with Gloss UV Finish&printOption=Printing both sides&mailClass=First Class&quantity=1&nonStandardQuantity=1&internationalQuantity=1&numberOfPages=2&paymentType=User Credit",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"costEstimate"
+							],
+							"query": [
+								{
+									"key": "documentClass",
+									"value": "Postcard 4.25 x 6"
+								},
+								{
+									"key": "layout",
+									"value": "Double Sided Postcard"
+								},
+								{
+									"key": "productionTime",
+									"value": "Next Day"
+								},
+								{
+									"key": "envelope",
+									"value": "None"
+								},
+								{
+									"key": "color",
+									"value": "Full Color"
+								},
+								{
+									"key": "paperType",
+									"value": "White Matte with Gloss UV Finish"
+								},
+								{
+									"key": "printOption",
+									"value": "Printing both sides"
+								},
+								{
+									"key": "mailClass",
+									"value": "First Class"
+								},
+								{
+									"key": "quantity",
+									"value": "1"
+								},
+								{
+									"key": "nonStandardQuantity",
+									"value": "1"
+								},
+								{
+									"key": "internationalQuantity",
+									"value": "1"
+								},
+								{
+									"key": "numberOfPages",
+									"value": "2"
+								},
+								{
+									"key": "paymentType",
+									"value": "User Credit"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/molpro/costEstimate (Single SIded Postcard)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(201);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var status = responseJson[\"job\"][\"status\"];",
+									"    tests[\"status = \" + status] = true; // this is for printing value to console",
+									"    pm.expect(status).to.eql(\"0\");",
+									"",
+									"    var description = responseJson[\"job\"][\"description\"];",
+									"    tests[\"description = \" + description] = true; // this is for printing value to console",
+									"    pm.expect(description).to.eql(\"Created\");",
+									"    ",
+									"    var jobId = responseJson[\"job\"][\"id\"];",
+									"    postman.setGlobalVariable(\"jobId\", jobId) ",
+									"    tests[\"jobId = \" + jobId] = true; // this is for printing value to console",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/costEstimate?documentClass=Postcard 4.25 x 6&layout=Single Sided Postcard&productionTime=Next Day&envelope=None&color=Full Color&paperType=White Matte with Gloss UV Finish&printOption=Printing both sides&mailClass=First Class&quantity=1&nonStandardQuantity=1&internationalQuantity=1&numberOfPages=1&paymentType=User Credit",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"costEstimate"
+							],
+							"query": [
+								{
+									"key": "documentClass",
+									"value": "Postcard 4.25 x 6"
+								},
+								{
+									"key": "layout",
+									"value": "Single Sided Postcard"
+								},
+								{
+									"key": "productionTime",
+									"value": "Next Day"
+								},
+								{
+									"key": "envelope",
+									"value": "None"
+								},
+								{
+									"key": "color",
+									"value": "Full Color"
+								},
+								{
+									"key": "paperType",
+									"value": "White Matte with Gloss UV Finish"
+								},
+								{
+									"key": "printOption",
+									"value": "Printing both sides"
+								},
+								{
+									"key": "mailClass",
+									"value": "First Class"
+								},
+								{
+									"key": "quantity",
+									"value": "1"
+								},
+								{
+									"key": "nonStandardQuantity",
+									"value": "1"
+								},
+								{
+									"key": "internationalQuantity",
+									"value": "1"
+								},
+								{
+									"key": "numberOfPages",
+									"value": "1"
+								},
+								{
+									"key": "paymentType",
+									"value": "User Credit"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Credit",
+			"item": [
+				{
+					"name": "/molpro/credit",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(200);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var allowNegative = responseJson[\"credit\"][\"allowNegative\"];",
+									"    tests[\"allowNegative = \" + allowNegative] = true; // this is for printing value to console",
+									"    pm.expect(allowNegative).to.eql(\"false\");",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/credit",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"credit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/molpro/credit/purchase",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(200);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var status = responseJson[\"credit\"][\"status\"];",
+									"    tests[\"status = \" + status] = true; // this is for printing value to console",
+									"    pm.expect(status).to.eql(\"0\");",
+									"",
+									"    var description = responseJson[\"credit\"][\"description\"];",
+									"    tests[\"description = \" + description] = true; // this is for printing value to console",
+									"    pm.expect(description).to.eql(\"Success\");",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "billingName",
+									"value": "Joe Smith",
+									"type": "text"
+								},
+								{
+									"key": "billingAddress1",
+									"value": "3103 10th ST N, Suite 201",
+									"type": "text"
+								},
+								{
+									"key": "billingCity",
+									"value": "Arlington",
+									"type": "text"
+								},
+								{
+									"key": "billingState",
+									"value": "VA",
+									"type": "text"
+								},
+								{
+									"key": "billingZip",
+									"value": "22201-4868",
+									"type": "text"
+								},
+								{
+									"key": "billingAmount",
+									"value": "9999",
+									"type": "text"
+								},
+								{
+									"key": "billingNumber",
+									"value": "4111111111111111",
+									"type": "text"
+								},
+								{
+									"key": "billingMonth",
+									"value": "01",
+									"type": "text"
+								},
+								{
+									"key": "billingYear",
+									"value": "2030",
+									"type": "text"
+								},
+								{
+									"key": "billingCvv",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "billingCcType",
+									"value": "VI",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/credit/purchase",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"credit",
+								"purchase"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Documents",
+			"item": [
+				{
+					"name": "/molpro/documents (Letter)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(200);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var status = responseJson[\"documents\"][\"status\"];",
+									"    tests[\"status = \" + status] = true; // this is for printing value to console",
+									"    pm.expect(status).to.eql(\"0\");",
+									"",
+									"    var description = responseJson[\"documents\"][\"description\"];",
+									"    tests[\"description = \" + description] = true; // this is for printing value to console",
+									"    pm.expect(description).to.eql(\"Success\");",
+									"    ",
+									"    var docId = responseJson[\"documents\"][\"id\"];",
+									"    postman.setGlobalVariable(\"docId\", docId) ",
+									"    tests[\"docId = \" + docId] = true; // this is for printing value to console",
+									"    ",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/documents?numberOfDocuments=10&documentClass=Letter 8.5 x 11",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"documents"
+							],
+							"query": [
+								{
+									"key": "numberOfDocuments",
+									"value": "10"
+								},
+								{
+									"key": "offset\t",
+									"value": "0",
+									"disabled": true
+								},
+								{
+									"key": "documentClass",
+									"value": "Letter 8.5 x 11"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/molpro/documents",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(200);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var status = responseJson[\"documents\"][\"status\"];",
+									"    tests[\"status = \" + status] = true; // this is for printing value to console",
+									"    pm.expect(status).to.eql(\"0\");",
+									"",
+									"    var description = responseJson[\"documents\"][\"description\"];",
+									"    tests[\"description = \" + description] = true; // this is for printing value to console",
+									"    pm.expect(description).to.eql(\"Success\");",
+									"    ",
+									"    var docId = responseJson[\"documents\"][\"id\"];",
+									"    postman.setGlobalVariable(\"docId\", docId) ",
+									"    tests[\"docId = \" + docId] = true; // this is for printing value to console",
+									"    ",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/documents?numberOfDocuments=75",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"documents"
+							],
+							"query": [
+								{
+									"key": "numberOfDocuments",
+									"value": "75"
+								},
+								{
+									"key": "offset\t",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "documentClass",
+									"value": "Letter 8.5 x 11",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/molpro/documents (PNG front)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(201);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var status = responseJson[\"document\"][\"status\"];",
+									"    tests[\"status = \" + status] = true; // this is for printing value to console",
+									"    pm.expect(status).to.eql(\"0\");",
+									"",
+									"    var description = responseJson[\"document\"][\"description\"];",
+									"    tests[\"description = \" + description] = true; // this is for printing value to console",
+									"    pm.expect(description).to.eql(\"Success\");",
+									"    ",
+									"    var docId = responseJson[\"document\"][\"id\"];",
+									"    postman.setGlobalVariable(\"front_docId\", docId) ",
+									"    tests[\"docId = \" + docId] = true; // this is for printing value to console",
+									"    ",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "user-agent",
+								"type": "text",
+								"value": "my-app/0.0.1"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/xml"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "multipart/form-data",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "forVAata",
+							"forVAata": [
+								{
+									"key": "documentFormat",
+									"value": "PNG",
+									"type": "text"
+								},
+								{
+									"key": "documentClass",
+									"value": "Postcard 5 x 8",
+									"type": "text"
+								},
+								{
+									"key": "file",
+									"type": "file",
+									"src": "tiger.png"
+								},
+								{
+									"key": "documentName",
+									"value": "tiger",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/documents",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"documents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/molpro/documents (PNG back)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(201);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var status = responseJson[\"document\"][\"status\"];",
+									"    tests[\"status = \" + status] = true; // this is for printing value to console",
+									"    pm.expect(status).to.eql(\"0\");",
+									"",
+									"    var description = responseJson[\"document\"][\"description\"];",
+									"    tests[\"description = \" + description] = true; // this is for printing value to console",
+									"    pm.expect(description).to.eql(\"Success\");",
+									"    ",
+									"    var docId = responseJson[\"document\"][\"id\"];",
+									"    postman.setGlobalVariable(\"back_docId\", docId) ",
+									"    tests[\"docId = \" + docId] = true; // this is for printing value to console",
+									"    ",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "user-agent",
+								"type": "text",
+								"value": "my-app/0.0.1"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/xml"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "multipart/form-data"
+							}
+						],
+						"body": {
+							"mode": "forVAata",
+							"forVAata": [
+								{
+									"key": "documentFormat",
+									"value": "PNG",
+									"type": "text"
+								},
+								{
+									"key": "documentClass",
+									"value": "Postcard 5 x 8",
+									"type": "text"
+								},
+								{
+									"key": "file",
+									"type": "file",
+									"src": "aligator.png"
+								},
+								{
+									"key": "documentName",
+									"value": "alligator",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/documents",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"documents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/molpro/documents/merge",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(200);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var status = responseJson[\"document\"][\"status\"];",
+									"    tests[\"status = \" + status] = true; // this is for printing value to console",
+									"    pm.expect(status).to.eql(\"0\");",
+									"",
+									"    var description = responseJson[\"document\"][\"description\"];",
+									"    tests[\"description = \" + description] = true; // this is for printing value to console",
+									"    pm.expect(description).to.eql(\"Success\");",
+									"    ",
+									"    var docId = responseJson[\"document\"][\"id\"];",
+									"    pm.collectionVariables.set(\"notecardDocId\", docId) ",
+									"    tests[\"docId = \" + docId] = true; // this is for printing value to console",
+									"    ",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/xml",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<documentList>\n  <documentId>{{front_docId}}</documentId>\n  <documentId>{{back_docId}}</documentId>\n</documentList>\n",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/documents/merge?documentName=testmerge_{{$timestamp}}",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"documents",
+								"merge"
+							],
+							"query": [
+								{
+									"key": "documentName",
+									"value": "testmerge_{{$timestamp}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/molpro/documents (Postcard)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(201);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var status = responseJson[\"document\"][\"status\"];",
+									"    tests[\"status = \" + status] = true; // this is for printing value to console",
+									"    pm.expect(status).to.eql(\"0\");",
+									"",
+									"    var description = responseJson[\"document\"][\"description\"];",
+									"    tests[\"description = \" + description] = true; // this is for printing value to console",
+									"    pm.expect(description).to.eql(\"Success\");",
+									"    ",
+									"    var docId = responseJson[\"document\"][\"id\"];",
+									"    postman.setGlobalVariable(\"front_docId\", docId) ",
+									"    tests[\"docId = \" + docId] = true; // this is for printing value to console",
+									"    ",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "user-agent",
+								"type": "text",
+								"value": "my-app/0.0.1"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/xml"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "multipart/form-data"
+							}
+						],
+						"body": {
+							"mode": "forVAata",
+							"forVAata": [
+								{
+									"key": "documentFormat",
+									"value": "PDF",
+									"type": "text"
+								},
+								{
+									"key": "documentClass",
+									"value": "Postcard 5 x 8",
+									"type": "text"
+								},
+								{
+									"key": "file",
+									"type": "file",
+									"src": "1_resized.pdf"
+								},
+								{
+									"key": "documentName",
+									"value": "tiger",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/documents",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"documents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/molpro/documents/checkName",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(200);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var status = responseJson[\"document\"][\"status\"];",
+									"    tests[\"status = \" + status] = true; // this is for printing value to console",
+									"    pm.expect(status).to.eql(\"9\");",
+									"",
+									"    var description = responseJson[\"document\"][\"description\"];",
+									"    tests[\"description = \" + description] = true; // this is for printing value to console",
+									"    pm.expect(description).to.eql(\"Document name is not unique\");",
+									"    ",
+									"    var docId = responseJson[\"document\"][\"id\"];",
+									"    tests[\"docId = \" + docId] = true; // this is for printing value to console",
+									"    ",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/xml"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/xml"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "documentName",
+									"value": "test_letter_original_May18_1725",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/documents/checkName",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"documents",
+								"checkName"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/molpro/documents (Certified Letter)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(201);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var status = responseJson[\"document\"][\"status\"];",
+									"    tests[\"status = \" + status] = true; // this is for printing value to console",
+									"    pm.expect(status).to.eql(\"0\");",
+									"",
+									"    var description = responseJson[\"document\"][\"description\"];",
+									"    tests[\"description = \" + description] = true; // this is for printing value to console",
+									"    pm.expect(description).to.eql(\"Success\");",
+									"    ",
+									"    var docId = responseJson[\"document\"][\"id\"];",
+									"    pm.collectionVariables.set(\"letterDocId\", docId) ",
+									"    tests[\"docId = \" + docId] = true; // this is for printing value to console",
+									"    ",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "user-agent",
+								"type": "text",
+								"value": "my-app/0.0.1"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/xml"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "multipart/form-data"
+							}
+						],
+						"body": {
+							"mode": "forVAata",
+							"forVAata": [
+								{
+									"key": "documentFormat",
+									"value": "PDF",
+									"type": "text"
+								},
+								{
+									"key": "documentClass",
+									"value": "Certified Letter 8.5 x 11",
+									"type": "text"
+								},
+								{
+									"key": "file",
+									"type": "file",
+									"src": "passport-checklist-regular.pdf"
+								},
+								{
+									"key": "documentName",
+									"value": "test_letter_{{$timestamp}}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/documents",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"documents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/molpro/documents (Reply Letter)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(201);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var status = responseJson[\"document\"][\"status\"];",
+									"    tests[\"status = \" + status] = true; // this is for printing value to console",
+									"    pm.expect(status).to.eql(\"0\");",
+									"",
+									"    var description = responseJson[\"document\"][\"description\"];",
+									"    tests[\"description = \" + description] = true; // this is for printing value to console",
+									"    pm.expect(description).to.eql(\"Success\");",
+									"    ",
+									"    var docId = responseJson[\"document\"][\"id\"];",
+									"    pm.collectionVariables.set(\"letterDocId\", docId) ",
+									"    tests[\"docId = \" + docId] = true; // this is for printing value to console",
+									"    ",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "user-agent",
+								"type": "text",
+								"value": "my-app/0.0.1"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/xml"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "multipart/form-data"
+							}
+						],
+						"body": {
+							"mode": "forVAata",
+							"forVAata": [
+								{
+									"key": "documentFormat",
+									"value": "PDF",
+									"type": "text"
+								},
+								{
+									"key": "documentClass",
+									"value": "Reply Letter 8.5 x 11",
+									"type": "text"
+								},
+								{
+									"key": "file",
+									"type": "file",
+									"src": "test_letter.pdf"
+								},
+								{
+									"key": "documentName",
+									"value": "courtesy_reply_letter_{{$timestamp}}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/documents",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"documents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/molpro/documents (Priority Letter)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(201);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var status = responseJson[\"document\"][\"status\"];",
+									"    tests[\"status = \" + status] = true; // this is for printing value to console",
+									"    pm.expect(status).to.eql(\"0\");",
+									"",
+									"    var description = responseJson[\"document\"][\"description\"];",
+									"    tests[\"description = \" + description] = true; // this is for printing value to console",
+									"    pm.expect(description).to.eql(\"Success\");",
+									"    ",
+									"    var docId = responseJson[\"document\"][\"id\"];",
+									"    pm.collectionVariables.set(\"priorityLetterDocId\", docId) ",
+									"    tests[\"docId = \" + docId] = true; // this is for printing value to console",
+									"    ",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "user-agent",
+								"type": "text",
+								"value": "my-app/0.0.1"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/xml"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "multipart/form-data"
+							}
+						],
+						"body": {
+							"mode": "forVAata",
+							"forVAata": [
+								{
+									"key": "documentFormat",
+									"value": "PDF",
+									"type": "text"
+								},
+								{
+									"key": "documentClass",
+									"value": "Priority Mail Letter 8.5 x 11",
+									"type": "text"
+								},
+								{
+									"key": "file",
+									"type": "file",
+									"src": "test_letter.pdf"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/documents",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"documents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/molpro/documents/url (Letter)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(201);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var status = responseJson[\"document\"][\"status\"];",
+									"    tests[\"status = \" + status] = true; // this is for printing value to console",
+									"    pm.expect(status).to.eql(\"0\");",
+									"",
+									"    var description = responseJson[\"document\"][\"description\"];",
+									"    tests[\"description = \" + description] = true; // this is for printing value to console",
+									"    pm.expect(description).to.eql(\"Success\");",
+									"    ",
+									"    var docId = responseJson[\"document\"][\"id\"];",
+									"    pm.collectionVariables.set(\"letterDocId\", docId) ",
+									"    tests[\"docId = \" + docId] = true; // this is for printing value to console",
+									"    ",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "user-agent",
+								"value": "my-app/0.0.1",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "multipart/form-data",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "forVAata",
+							"forVAata": [
+								{
+									"key": "documentFormat",
+									"value": "PDF",
+									"type": "text"
+								},
+								{
+									"key": "documentClass",
+									"value": "Letter 8.5 x 11",
+									"type": "text"
+								},
+								{
+									"key": "url",
+									"value": "http://www.legalandcompliance.com/wp-content/uploads/2011/12/LC-Whitepaper-NASDAQ-Listing-Requirements.pdf",
+									"type": "text"
+								},
+								{
+									"key": "documentName",
+									"value": "test_letter_url",
+									"type": "text"
+								},
+								{
+									"key": "url",
+									"value": "https://allsetproperties.com/wp-content/uploads/2018/06/Rental-Requirements.pdf ",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "url",
+									"value": "https://www.adobe.com/support/products/enterprise/knowledgecenter/media/c4611_sample_explain.pdf",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "url",
+									"value": "http://www.africau.edu/images/default/sample.pdf",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "url",
+									"value": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "url",
+									"value": "http://www.pdf995.com/samples/pdf.pdf",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "url",
+									"value": "https://unec.edu.az/application/uploads/2014/12/pdf-sample.pdf",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "url",
+									"value": "http://www.orimi.com/pdf-test.pdf",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "url",
+									"value": "https://example-files.online-convert.com/document/pdf/example.pdf",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "url",
+									"value": "https://www.pdfpdf.com/samples/Sample1.PDF",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "url",
+									"value": "https://about.usps.com/forms/ps3553.pdf",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "url",
+									"value": "https://www.irs.gov/pub/irs-pdf/p1.pdf",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/documents/url",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"documents",
+								"url"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/molpro/documents (Letter)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(201);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var status = responseJson[\"document\"][\"status\"];",
+									"    tests[\"status = \" + status] = true; // this is for printing value to console",
+									"    pm.expect(status).to.eql(\"0\");",
+									"",
+									"    var description = responseJson[\"document\"][\"description\"];",
+									"    tests[\"description = \" + description] = true; // this is for printing value to console",
+									"    pm.expect(description).to.eql(\"Success\");",
+									"    ",
+									"    var docId = responseJson[\"document\"][\"id\"];",
+									"    pm.collectionVariables.set(\"letterDocId\", docId) ",
+									"    tests[\"docId = \" + docId] = true; // this is for printing value to console",
+									"    ",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "user-agent",
+								"value": "my-app/0.0.1",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "multipart/form-data",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "forVAata",
+							"forVAata": [
+								{
+									"key": "documentFormat",
+									"value": "PDF",
+									"type": "text"
+								},
+								{
+									"key": "documentClass",
+									"value": "Letter 8.5 x 11",
+									"type": "text"
+								},
+								{
+									"key": "file",
+									"type": "file",
+									"src": "passport-checklist-regular.pdf"
+								},
+								{
+									"key": "documentName",
+									"value": "MB_May19_1411",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/documents/",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"documents",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/molpro/documents (Letter) Large",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(201);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var status = responseJson[\"document\"][\"status\"];",
+									"    tests[\"status = \" + status] = true; // this is for printing value to console",
+									"    pm.expect(status).to.eql(\"0\");",
+									"",
+									"    var description = responseJson[\"document\"][\"description\"];",
+									"    tests[\"description = \" + description] = true; // this is for printing value to console",
+									"    pm.expect(description).to.eql(\"Success\");",
+									"    ",
+									"    var docId = responseJson[\"document\"][\"id\"];",
+									"    pm.collectionVariables.set(\"letterDocId\", docId) ",
+									"    tests[\"docId = \" + docId] = true; // this is for printing value to console",
+									"    ",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "user-agent",
+								"value": "my-app/0.0.1",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "multipart/form-data",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "forVAata",
+							"forVAata": [
+								{
+									"key": "documentFormat",
+									"value": "PDF",
+									"type": "text"
+								},
+								{
+									"key": "documentClass",
+									"value": "Letter 8.5 x 11",
+									"type": "text"
+								},
+								{
+									"key": "file",
+									"type": "file",
+									"src": "20210429123343_CM_23259_0366_300dpi.pdf"
+								},
+								{
+									"key": "documentName",
+									"value": "test_letter_May3_1154",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/documents/",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"documents",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/molpro/documents (Secure Mailer)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(201);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var status = responseJson[\"document\"][\"status\"];",
+									"    tests[\"status = \" + status] = true; // this is for printing value to console",
+									"    pm.expect(status).to.eql(\"0\");",
+									"",
+									"    var description = responseJson[\"document\"][\"description\"];",
+									"    tests[\"description = \" + description] = true; // this is for printing value to console",
+									"    pm.expect(description).to.eql(\"Success\");",
+									"    ",
+									"    var docId = responseJson[\"document\"][\"id\"];",
+									"    pm.collectionVariables.set(\"letterDocId\", docId) ",
+									"    tests[\"docId = \" + docId] = true; // this is for printing value to console",
+									"    ",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "user-agent",
+								"type": "text",
+								"value": "my-app/0.0.1"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/xml"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "multipart/form-data"
+							}
+						],
+						"body": {
+							"mode": "forVAata",
+							"forVAata": [
+								{
+									"key": "documentFormat",
+									"value": "PDF",
+									"type": "text"
+								},
+								{
+									"key": "documentClass",
+									"value": "Secure Self Mailer",
+									"type": "text"
+								},
+								{
+									"key": "file",
+									"type": "file",
+									"src": "test_secure_mailer.pdf"
+								},
+								{
+									"key": "documentName",
+									"value": "sample_secure_mailer",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/documents",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"documents"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Jobs",
+			"item": [
+				{
+					"name": "/molpro/jobs (Letter)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(201);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var status = responseJson[\"job\"][\"status\"];",
+									"    tests[\"status = \" + status] = true; // this is for printing value to console",
+									"    pm.expect(status).to.eql(\"0\");",
+									"",
+									"    var description = responseJson[\"job\"][\"description\"];",
+									"    tests[\"description = \" + description] = true; // this is for printing value to console",
+									"    pm.expect(description).to.eql(\"Created\");",
+									"    ",
+									"    var jobId = responseJson[\"job\"][\"id\"];",
+									"    postman.setGlobalVariable(\"jobId\", jobId) ",
+									"    tests[\"jobId = \" + jobId] = true; // this is for printing value to console",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "documentClass",
+									"value": "Letter 8.5 x 11",
+									"type": "text"
+								},
+								{
+									"key": "layout",
+									"value": "Address on Separate Page",
+									"type": "text"
+								},
+								{
+									"key": "productionTime",
+									"value": "Next Day",
+									"type": "text"
+								},
+								{
+									"key": "envelope",
+									"value": "#10 Double Window",
+									"type": "text"
+								},
+								{
+									"key": "color",
+									"value": "Black and White",
+									"type": "text"
+								},
+								{
+									"key": "paperType",
+									"value": "White 24#",
+									"type": "text"
+								},
+								{
+									"key": "printOption",
+									"value": "Printing One side",
+									"type": "text"
+								},
+								{
+									"key": "documentId",
+									"value": "{{letterDocId}}",
+									"type": "text"
+								},
+								{
+									"key": "addressId",
+									"value": "{{addressListId}}",
+									"type": "text"
+								},
+								{
+									"key": "mailClass",
+									"value": "First Class",
+									"type": "text"
+								},
+								{
+									"key": "endorsement",
+									"value": "Forwarding Service Requested",
+									"type": "text"
+								},
+								{
+									"key": "appSignature",
+									"value": "Click2Mail Hub Podio",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/jobs",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"jobs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/molpro/jobs (Postcard)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(201);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var status = responseJson[\"job\"][\"status\"];",
+									"    tests[\"status = \" + status] = true; // this is for printing value to console",
+									"    pm.expect(status).to.eql(\"0\");",
+									"",
+									"    var description = responseJson[\"job\"][\"description\"];",
+									"    tests[\"description = \" + description] = true; // this is for printing value to console",
+									"    pm.expect(description).to.eql(\"Created\");",
+									"    ",
+									"    var jobId = responseJson[\"job\"][\"id\"];",
+									"    postman.setGlobalVariable(\"jobId\", jobId) ",
+									"    tests[\"jobId = \" + jobId] = true; // this is for printing value to console",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "documentClass",
+									"value": "Postcard 4.25 x 6",
+									"type": "text"
+								},
+								{
+									"key": "layout",
+									"value": "Double Sided Postcard",
+									"type": "text"
+								},
+								{
+									"key": "productionTime",
+									"value": "Next Day",
+									"type": "text"
+								},
+								{
+									"key": "envelope",
+									"value": "NONE",
+									"type": "text"
+								},
+								{
+									"key": "color",
+									"value": "Full Color",
+									"type": "text"
+								},
+								{
+									"key": "paperType",
+									"value": "White Matte",
+									"type": "text"
+								},
+								{
+									"key": "printOption",
+									"value": "Printing both sides",
+									"type": "text"
+								},
+								{
+									"key": "documentId",
+									"value": "440842",
+									"type": "text"
+								},
+								{
+									"key": "addressId",
+									"value": "{{addressListId}}",
+									"type": "text"
+								},
+								{
+									"key": "mailClass",
+									"value": "First Class",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/jobs",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"jobs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/molpro/jobs/update",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(201);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var status = responseJson[\"job\"][\"status\"];",
+									"    tests[\"status = \" + status] = true; // this is for printing value to console",
+									"    pm.expect(status).to.eql(\"0\");",
+									"",
+									"    var description = responseJson[\"job\"][\"description\"];",
+									"    tests[\"description = \" + description] = true; // this is for printing value to console",
+									"    pm.expect(description).to.eql(\"Created\");",
+									"    ",
+									"    var jobId = responseJson[\"job\"][\"id\"];",
+									"    postman.setGlobalVariable(\"jobId\", jobId) ",
+									"    tests[\"jobId = \" + jobId] = true; // this is for printing value to console",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "documentClass",
+									"value": "Letter 8.5 x 11",
+									"type": "text"
+								},
+								{
+									"key": "layout",
+									"value": "Address on Separate Page",
+									"type": "text"
+								},
+								{
+									"key": "productionTime",
+									"value": "Next Day",
+									"type": "text"
+								},
+								{
+									"key": "envelope",
+									"value": "#10 Double Window",
+									"type": "text"
+								},
+								{
+									"key": "color",
+									"value": "Black and White",
+									"type": "text"
+								},
+								{
+									"key": "paperType",
+									"value": "White 24#",
+									"type": "text"
+								},
+								{
+									"key": "printOption",
+									"value": "Printing One side",
+									"type": "text"
+								},
+								{
+									"key": "documentId",
+									"value": "{{letterDocId}}",
+									"type": "text"
+								},
+								{
+									"key": "addressId",
+									"value": "{{addressListId}}",
+									"type": "text"
+								},
+								{
+									"key": "mailClass",
+									"value": "First Class",
+									"type": "text"
+								},
+								{
+									"key": "endorsement",
+									"value": "Forwarding Service Requested",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/jobs",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"jobs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/molpro/jobs (Reply Letter)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(201);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var status = responseJson[\"job\"][\"status\"];",
+									"    tests[\"status = \" + status] = true; // this is for printing value to console",
+									"    pm.expect(status).to.eql(\"0\");",
+									"",
+									"    var description = responseJson[\"job\"][\"description\"];",
+									"    tests[\"description = \" + description] = true; // this is for printing value to console",
+									"    pm.expect(description).to.eql(\"Created\");",
+									"    ",
+									"    var jobId = responseJson[\"job\"][\"id\"];",
+									"    postman.setGlobalVariable(\"jobId\", jobId) ",
+									"    tests[\"jobId = \" + jobId] = true; // this is for printing value to console",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "documentClass",
+									"value": "Reply Letter 8.5 x 11",
+									"type": "text"
+								},
+								{
+									"key": "layout",
+									"value": "Courtesy Reply Letter",
+									"type": "text"
+								},
+								{
+									"key": "productionTime",
+									"value": "Next Day",
+									"type": "text"
+								},
+								{
+									"key": "envelope",
+									"value": "#10 Eco-Envelope - CRM",
+									"type": "text"
+								},
+								{
+									"key": "color",
+									"value": "Full Color",
+									"type": "text"
+								},
+								{
+									"key": "paperType",
+									"value": "White 24#",
+									"type": "text"
+								},
+								{
+									"key": "printOption",
+									"value": "Printing One side",
+									"type": "text"
+								},
+								{
+									"key": "documentId",
+									"value": "{{letterDocId}}",
+									"type": "text"
+								},
+								{
+									"key": "addressId",
+									"value": "{{addressListId}}",
+									"type": "text"
+								},
+								{
+									"key": "mailClass",
+									"value": "First Class",
+									"type": "text"
+								},
+								{
+									"key": "courtesyReplyAddressId",
+									"value": "806302",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/jobs",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"jobs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/molpro/jobs (Secure Mailer)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(201);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var status = responseJson[\"job\"][\"status\"];",
+									"    tests[\"status = \" + status] = true; // this is for printing value to console",
+									"    pm.expect(status).to.eql(\"0\");",
+									"",
+									"    var description = responseJson[\"job\"][\"description\"];",
+									"    tests[\"description = \" + description] = true; // this is for printing value to console",
+									"    pm.expect(description).to.eql(\"Created\");",
+									"    ",
+									"    var jobId = responseJson[\"job\"][\"id\"];",
+									"    postman.setGlobalVariable(\"jobId\", jobId) ",
+									"    tests[\"jobId = \" + jobId] = true; // this is for printing value to console",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "documentClass",
+									"value": "Secure Self Mailer",
+									"type": "text"
+								},
+								{
+									"key": "layout",
+									"value": "Secure Self Mailer",
+									"type": "text"
+								},
+								{
+									"key": "productionTime",
+									"value": "Next Day",
+									"type": "text"
+								},
+								{
+									"key": "envelope",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "color",
+									"value": "Black and White",
+									"type": "text"
+								},
+								{
+									"key": "paperType",
+									"value": "White w/Gray Security Tint",
+									"type": "text"
+								},
+								{
+									"key": "printOption",
+									"value": "Printing Both sides",
+									"type": "text"
+								},
+								{
+									"key": "documentId",
+									"value": "{{letterDocId}}",
+									"type": "text"
+								},
+								{
+									"key": "addressId",
+									"value": "{{addressListId}}",
+									"type": "text"
+								},
+								{
+									"key": "mailClass",
+									"value": "First Class",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/jobs",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"jobs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/molpro/jobs (Enclosure)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(201);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var status = responseJson[\"job\"][\"status\"];",
+									"    tests[\"status = \" + status] = true; // this is for printing value to console",
+									"    pm.expect(status).to.eql(\"0\");",
+									"",
+									"    var description = responseJson[\"job\"][\"description\"];",
+									"    tests[\"description = \" + description] = true; // this is for printing value to console",
+									"    pm.expect(description).to.eql(\"Created\");",
+									"    ",
+									"    var jobId = responseJson[\"job\"][\"id\"];",
+									"    postman.setGlobalVariable(\"jobId\", jobId) ",
+									"    tests[\"jobId = \" + jobId] = true; // this is for printing value to console",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "documentClass",
+									"value": "Letter 8.5 x 11",
+									"type": "text"
+								},
+								{
+									"key": "layout",
+									"value": "Address on Separate Page",
+									"type": "text"
+								},
+								{
+									"key": "productionTime",
+									"value": "Next Day",
+									"type": "text"
+								},
+								{
+									"key": "envelope",
+									"value": "#10 Double Window",
+									"type": "text"
+								},
+								{
+									"key": "color",
+									"value": "Black and White",
+									"type": "text"
+								},
+								{
+									"key": "paperType",
+									"value": "White 24#",
+									"type": "text"
+								},
+								{
+									"key": "printOption",
+									"value": "Printing One side",
+									"type": "text"
+								},
+								{
+									"key": "documentId",
+									"value": "{{letterDocId}}",
+									"type": "text"
+								},
+								{
+									"key": "addressId",
+									"value": "{{addressListId}}",
+									"type": "text"
+								},
+								{
+									"key": "mailClass",
+									"value": "First Class",
+									"type": "text"
+								},
+								{
+									"key": "enclosure",
+									"value": "#9 Courtesy Reply Double Window Envelope",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/jobs",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"jobs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/molpro/jobs/<id>/submit CC",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(200);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var status = responseJson[\"job\"][\"status\"];",
+									"    tests[\"status = \" + status] = true; // this is for printing value to console",
+									"    pm.expect(status).to.eql(\"0\");",
+									"",
+									"    var description = responseJson[\"job\"][\"description\"];",
+									"    tests[\"description = \" + description] = true; // this is for printing value to console",
+									"    pm.expect(description).to.eql(\"Success\");",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "{{jobId}}",
+									"type": "text"
+								},
+								{
+									"key": "billingType",
+									"value": "Credit Card",
+									"type": "text"
+								},
+								{
+									"key": "billingName",
+									"value": "Joe Smith",
+									"type": "text"
+								},
+								{
+									"key": "billingCompany",
+									"value": "Click2Maill LLC",
+									"type": "text"
+								},
+								{
+									"key": "billingAddress1",
+									"value": "3103 10th ST N, Suite 201",
+									"type": "text"
+								},
+								{
+									"key": "billingCity",
+									"value": "Arlington",
+									"type": "text"
+								},
+								{
+									"key": "billingState",
+									"value": "VA",
+									"type": "text"
+								},
+								{
+									"key": "billingCountry",
+									"value": "United States",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "billingZip",
+									"value": "22201-4868",
+									"type": "text"
+								},
+								{
+									"key": "billingNumber",
+									"value": "4111111111111111",
+									"type": "text"
+								},
+								{
+									"key": "billingMonth",
+									"value": "01",
+									"type": "text"
+								},
+								{
+									"key": "billingYear",
+									"value": "2030",
+									"type": "text"
+								},
+								{
+									"key": "billingCvv",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "billingCcType",
+									"value": "VI",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/jobs/{{jobId}}/submit",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"jobs",
+								"{{jobId}}",
+								"submit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/molpro/jobs/<id>/submit User Credit",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(200);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var status = responseJson[\"job\"][\"status\"];",
+									"    tests[\"status = \" + status] = true; // this is for printing value to console",
+									"    pm.expect(status).to.eql(\"0\");",
+									"",
+									"    var description = responseJson[\"job\"][\"description\"];",
+									"    tests[\"description = \" + description] = true; // this is for printing value to console",
+									"    pm.expect(description).to.eql(\"Success\");",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "{{jobId}}",
+									"type": "text"
+								},
+								{
+									"key": "billingType",
+									"value": "User Credit",
+									"type": "text"
+								},
+								{
+									"key": "shipName",
+									"value": "Joe Smith",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "shipAddress1",
+									"value": "3103 10th ST N, Suite 201",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "shipCity",
+									"value": "Arlington",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "shipState",
+									"value": "VA",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "shipZip",
+									"value": "22201",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "shipMethod",
+									"value": "Free",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "shipperName",
+									"value": "C2M LLC",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/jobs/{{jobId}}/submit",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"jobs",
+								"{{jobId}}",
+								"submit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/molpro/jobs (Certified Letter)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(201);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var status = responseJson[\"job\"][\"status\"];",
+									"    tests[\"status = \" + status] = true; // this is for printing value to console",
+									"    pm.expect(status).to.eql(\"0\");",
+									"",
+									"    var description = responseJson[\"job\"][\"description\"];",
+									"    tests[\"description = \" + description] = true; // this is for printing value to console",
+									"    pm.expect(description).to.eql(\"Created\");",
+									"    ",
+									"    var jobId = responseJson[\"job\"][\"id\"];",
+									"    postman.setGlobalVariable(\"jobId\", jobId) ",
+									"    tests[\"jobId = \" + jobId] = true; // this is for printing value to console",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "documentClass",
+									"value": "Certified Letter 8.5 x 11",
+									"type": "text"
+								},
+								{
+									"key": "layout",
+									"value": "Address on Separate Page",
+									"type": "text"
+								},
+								{
+									"key": "productionTime",
+									"value": "Next Day",
+									"type": "text"
+								},
+								{
+									"key": "envelope",
+									"value": "Certified Mail Letter Envelope",
+									"type": "text"
+								},
+								{
+									"key": "color",
+									"value": "Black and White",
+									"type": "text"
+								},
+								{
+									"key": "paperType",
+									"value": "White 24#",
+									"type": "text"
+								},
+								{
+									"key": "printOption",
+									"value": "Printing One side",
+									"type": "text"
+								},
+								{
+									"key": "documentId",
+									"value": "{{letterDocId}}",
+									"type": "text"
+								},
+								{
+									"key": "addressId",
+									"value": "{{addressListId}}",
+									"type": "text"
+								},
+								{
+									"key": "rtnName",
+									"value": "Homer Simpson",
+									"type": "text"
+								},
+								{
+									"key": "rtnaddress1",
+									"value": "100 mailing street",
+									"type": "text"
+								},
+								{
+									"key": "rtnCity",
+									"value": "Chicago",
+									"type": "text"
+								},
+								{
+									"key": "rtnState",
+									"value": "IL",
+									"type": "text"
+								},
+								{
+									"key": "rtnZip",
+									"value": "60601",
+									"type": "text"
+								},
+								{
+									"key": "appSignature",
+									"value": "debtcleanse_test_MSmith",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "mailClass",
+									"value": "Cert. w/electronic return receipt",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "mailClass",
+									"value": "Cert. w/ERR No Move Update",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "mailClass",
+									"value": "Cert. w/rtn. and restricted delivery",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "mailClass",
+									"value": "Certified Mail w/return receipt",
+									"type": "text"
+								},
+								{
+									"key": "appSignature",
+									"value": "Click2Mail Hub Podio",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/jobs",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"jobs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/molpro/jobs (Priority Letter)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(201);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var status = responseJson[\"job\"][\"status\"];",
+									"    tests[\"status = \" + status] = true; // this is for printing value to console",
+									"    pm.expect(status).to.eql(\"0\");",
+									"",
+									"    var description = responseJson[\"job\"][\"description\"];",
+									"    tests[\"description = \" + description] = true; // this is for printing value to console",
+									"    pm.expect(description).to.eql(\"Created\");",
+									"    ",
+									"    var jobId = responseJson[\"job\"][\"id\"];",
+									"    postman.setGlobalVariable(\"jobId\", jobId) ",
+									"    tests[\"jobId = \" + jobId] = true; // this is for printing value to console",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "documentClass",
+									"value": "Priority Mail Letter 8.5 x 11",
+									"type": "text"
+								},
+								{
+									"key": "layout",
+									"value": "Address on Separate Page",
+									"type": "text"
+								},
+								{
+									"key": "productionTime",
+									"value": "Same Day",
+									"type": "text"
+								},
+								{
+									"key": "envelope",
+									"value": "Flat Rate USPS Priority Mail",
+									"type": "text"
+								},
+								{
+									"key": "color",
+									"value": "Black and White",
+									"type": "text"
+								},
+								{
+									"key": "paperType",
+									"value": "White 24#",
+									"type": "text"
+								},
+								{
+									"key": "printOption",
+									"value": "Printing both sides",
+									"type": "text"
+								},
+								{
+									"key": "documentId",
+									"value": "{{priorityLetterDocId}}",
+									"type": "text"
+								},
+								{
+									"key": "addressId",
+									"value": "{{addressListId}}",
+									"type": "text"
+								},
+								{
+									"key": "mailClass",
+									"value": "Priority Mail with Delivery Confirmation",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/jobs",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"jobs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/molpro/jobs (Certified Self Mailer - Green Card)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(201);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var status = responseJson[\"job\"][\"status\"];",
+									"    tests[\"status = \" + status] = true; // this is for printing value to console",
+									"    pm.expect(status).to.eql(\"0\");",
+									"",
+									"    var description = responseJson[\"job\"][\"description\"];",
+									"    tests[\"description = \" + description] = true; // this is for printing value to console",
+									"    pm.expect(description).to.eql(\"Created\");",
+									"    ",
+									"    var jobId = responseJson[\"job\"][\"id\"];",
+									"    postman.setGlobalVariable(\"jobId\", jobId) ",
+									"    tests[\"jobId = \" + jobId] = true; // this is for printing value to console",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "documentClass",
+									"value": "Certified Self Mailer - Green Card ",
+									"type": "text"
+								},
+								{
+									"key": "layout",
+									"value": "Self Mailer with Return Reciept",
+									"type": "text"
+								},
+								{
+									"key": "productionTime",
+									"value": "Next Day",
+									"type": "text"
+								},
+								{
+									"key": "color",
+									"value": "Full Color",
+									"type": "text"
+								},
+								{
+									"key": "paperType",
+									"value": "Postcard Stock",
+									"type": "text"
+								},
+								{
+									"key": "printOption",
+									"value": "Printing both sides",
+									"type": "text"
+								},
+								{
+									"key": "mailClass",
+									"value": "Cert. w/rtn. and restricted delivery",
+									"type": "text"
+								},
+								{
+									"key": "envelope",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/jobs",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"jobs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/molpro/jobs/<id>/submit Invoice",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(200);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var status = responseJson[\"job\"][\"status\"];",
+									"    tests[\"status = \" + status] = true; // this is for printing value to console",
+									"    pm.expect(status).to.eql(\"0\");",
+									"",
+									"    var description = responseJson[\"job\"][\"description\"];",
+									"    tests[\"description = \" + description] = true; // this is for printing value to console",
+									"    pm.expect(description).to.eql(\"Success\");",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "{{jobId}}",
+									"type": "text"
+								},
+								{
+									"key": "billingType",
+									"value": "Invoice",
+									"type": "text"
+								},
+								{
+									"key": "billingName",
+									"value": "Joe Smith",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "billingCompany",
+									"value": "Click2Maill LLC",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "billingAddress1",
+									"value": "3103 10th ST N, Suite 201",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "billingCity",
+									"value": "Arlington",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "billingState",
+									"value": "VA",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "billingCountry",
+									"value": "United States",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "billingZip",
+									"value": "22201-4868",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "billingNumber",
+									"value": "4111111111111111",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "billingMonth",
+									"value": "01",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "billingYear",
+									"value": "2030",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "billingCvv",
+									"value": "123",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "billingCcType",
+									"value": "VI",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/jobs/{{jobId}}/submit",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"jobs",
+								"{{jobId}}",
+								"submit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/molpro/jobs/<id>/",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(201);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var status = responseJson[\"job\"][\"status\"];",
+									"    tests[\"status = \" + status] = true; // this is for printing value to console",
+									"    pm.expect(Number(status)).to.be.above(0);",
+									"",
+									"    var description = responseJson[\"job\"][\"description\"];",
+									"    tests[\"description = \" + description] = true; // this is for printing value to console",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/jobs/11452870",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"jobs",
+								"11452870"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/molpro/jobs/<id>/returnReceipt",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(201);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var status = responseJson[\"job\"][\"status\"];",
+									"    tests[\"status = \" + status] = true; // this is for printing value to console",
+									"    pm.expect(Number(status)).to.be.above(0);",
+									"",
+									"    var description = responseJson[\"job\"][\"description\"];",
+									"    tests[\"description = \" + description] = true; // this is for printing value to console",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/jobs/{{jobId}}/returnReceipt",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"jobs",
+								"{{jobId}}",
+								"returnReceipt"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/molpro/jobs/info/<id>",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(201);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var status = responseJson[\"job\"][\"status\"];",
+									"    tests[\"status = \" + status] = true; // this is for printing value to console",
+									"    pm.expect(Number(status)).to.be.above(0);",
+									"",
+									"    var description = responseJson[\"job\"][\"description\"];",
+									"    tests[\"description = \" + description] = true; // this is for printing value to console",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/jobs/info/{{jobId}}",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"jobs",
+								"info",
+								"{{jobId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/molpro/jobs/<id>/cancel",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(200);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var status = responseJson[\"job\"][\"status\"];",
+									"    tests[\"status = \" + status] = true; // this is for printing value to console",
+									"    pm.expect(status).to.eql(\"0\");",
+									"",
+									"    var description = responseJson[\"job\"][\"description\"];",
+									"    tests[\"description = \" + description] = true; // this is for printing value to console",
+									"    pm.expect(description).to.eql(\"Success\");",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/jobs/{{jobId}}/cancel",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"jobs",
+								"{{jobId}}",
+								"cancel"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/molpro/jobs/<id>/proof",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(201);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var status = responseJson[\"job\"][\"status\"];",
+									"    tests[\"status = \" + status] = true; // this is for printing value to console",
+									"    pm.expect(status).to.eql(\"0\");",
+									"",
+									"    var description = responseJson[\"job\"][\"description\"];",
+									"    tests[\"description = \" + description] = true; // this is for printing value to console",
+									"    pm.expect(description).to.eql(\"Success\");",
+									"",
+									"    var proofId = responseJson[\"job\"][\"id\"];",
+									"    postman.setGlobalVariable(\"proofId\", proofId) ",
+									"   tests[\"proofId = \" + proofId] = true; // this is for printing value to console",
+									"    ",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "{{jobId}}",
+									"type": "text"
+								},
+								{
+									"key": "billingType",
+									"value": "Credit Card",
+									"type": "text"
+								},
+								{
+									"key": "billingName",
+									"value": "Joe Smith",
+									"type": "text"
+								},
+								{
+									"key": "billingCompany",
+									"value": "Click2Maill LLC",
+									"type": "text"
+								},
+								{
+									"key": "billingAddress1",
+									"value": "3103 10th ST N, Suite 201",
+									"type": "text"
+								},
+								{
+									"key": "billingCity",
+									"value": "Arlington",
+									"type": "text"
+								},
+								{
+									"key": "billingState",
+									"value": "VA",
+									"type": "text"
+								},
+								{
+									"key": "billingCountry",
+									"value": "United States",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "billingZip",
+									"value": "22201-4868",
+									"type": "text"
+								},
+								{
+									"key": "billingNumber",
+									"value": "4111111111111111",
+									"type": "text"
+								},
+								{
+									"key": "billingMonth",
+									"value": "01",
+									"type": "text"
+								},
+								{
+									"key": "billingYear",
+									"value": "2030",
+									"type": "text"
+								},
+								{
+									"key": "billingCvv",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "billingCcType",
+									"value": "VI",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/jobs/{{jobId}}/proof",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"jobs",
+								"{{jobId}}",
+								"proof"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/molpro/jobs/<id>/proof/<proofId>",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(201);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var status = responseJson[\"job\"][\"status\"];",
+									"    tests[\"status = \" + status] = true; // this is for printing value to console",
+									"    pm.expect(Number(status)).to.be.above(0);",
+									"",
+									"    var description = responseJson[\"job\"][\"description\"];",
+									"    tests[\"description = \" + description] = true; // this is for printing value to console",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/jobs/{{jobId}}/proof/{{proofId}}",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"jobs",
+								"{{jobId}}",
+								"proof",
+								"{{proofId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/molpro/jobs/<id>/tracking",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(200);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var status = responseJson[\"job\"][\"status\"];",
+									"    tests[\"status = \" + status] = true; // this is for printing value to console",
+									"    pm.expect(status).to.eql(\"0\");",
+									"",
+									"    var description = responseJson[\"job\"][\"description\"];",
+									"    tests[\"description = \" + description] = true; // this is for printing value to console",
+									"    pm.expect(description).to.eql(\"Success\");",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/jobs/{{jobId}}/tracking?trackingType=IMB&trackingDetail=true",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"jobs",
+								"{{jobId}}",
+								"tracking"
+							],
+							"query": [
+								{
+									"key": "trackingType",
+									"value": "IMB"
+								},
+								{
+									"key": "trackingDetail",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/molpro/jobs/jobTemplate/submitonepiece",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "forVAata",
+							"forVAata": [
+								{
+									"key": "templateName",
+									"value": "singlePieceTest",
+									"type": "text"
+								},
+								{
+									"key": "document",
+									"description": "Required File to be upload in a multipart section. Request format should be multipart/form-data.",
+									"type": "file",
+									"src": "/Users/mSmith/Downloads/PSForm_3600_FCM1.pdf"
+								},
+								{
+									"key": "address",
+									"value": "<address>\n<name>Jitendra Chandani</name>\n<organization>JIVA</organization>\n<address1>One Church Street</address1>\n<address2>Suite# 401</address2>\n<address3></address3>\n<city>Arlington</city>\n<state>VA</state>\n<postalCode>20850</postalCode>\n<country>US</country>\n</address>",
+									"description": "Required An XML string for recipient address:",
+									"type": "text"
+								},
+								{
+									"key": "billingType",
+									"value": "Credit Card",
+									"description": "Required",
+									"type": "text"
+								},
+								{
+									"key": "billingName",
+									"value": "Joe Smith",
+									"description": " Required(Credit Card only)",
+									"type": "text"
+								},
+								{
+									"key": "billingCompany",
+									"value": "C2M LLC",
+									"description": " Optional(Credit Card only)",
+									"type": "text"
+								},
+								{
+									"key": "billingAddress1",
+									"value": "3103 10th ST N Aot 310",
+									"description": " Required(Credit Card only)",
+									"type": "text"
+								},
+								{
+									"key": "billingCity",
+									"value": "Arlington",
+									"description": " Required(Credit Card only)",
+									"type": "text"
+								},
+								{
+									"key": "billingState",
+									"value": "VA",
+									"description": " Required(Credit Card only)",
+									"type": "text"
+								},
+								{
+									"key": "billingZip",
+									"value": "22201",
+									"description": " Optional(Credit Card only)",
+									"type": "text"
+								},
+								{
+									"key": "billingNumber",
+									"value": "4111111111111111",
+									"description": " Required(Credit Card only)",
+									"type": "text"
+								},
+								{
+									"key": "billingMonth",
+									"value": "03",
+									"description": " Required(Credit Card only)",
+									"type": "text"
+								},
+								{
+									"key": "billingYear",
+									"value": "2024",
+									"description": " Required(Credit Card only)",
+									"type": "text"
+								},
+								{
+									"key": "billingCvv",
+									"value": "123",
+									"description": " Required(Credit Card only)",
+									"type": "text"
+								},
+								{
+									"key": "billingCcType",
+									"value": "VI",
+									"description": " Required(Credit Card only)",
+									"type": "text"
+								},
+								{
+									"key": "appSignature",
+									"value": "POSTMAN_TEST",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/jobs/jobTemplate/submitonepiece",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"jobs",
+								"jobTemplate",
+								"submitonepiece"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/molpro/addressLists - with merge fields",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(200);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var status = responseJson[\"addressList\"][\"status\"];",
+									"    tests[\"status = \" + status] = true; // this is for printing value to console",
+									"    pm.expect(status).to.eql(\"3\");",
+									"",
+									"    var description = responseJson[\"addressList\"][\"description\"];",
+									"    tests[\"description = \" + description] = true; // this is for printing value to console",
+									"    pm.expect(description).to.eql(\"CASS Standardized\");",
+									"    ",
+									"    var addressListId = responseJson[\"addressList\"][\"id\"];",
+									"    postman.setGlobalVariable(\"addressListId\", addressListId) ",
+									"    tests[\"addressListId = \" + addressListId] = true; // this is for printing value to console",
+									"    ",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/xml"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/xml"
+							},
+							{
+								"key": "user-agent",
+								"type": "text",
+								"value": "my-app/0.0.1"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<addressList>\n\t<addressListName>test_Apr_01_2020</addressListName>\n\t<addressMappingId>{{addressMappingID}}</addressMappingId>\n\t<addresses>\n\t\t<address>\n\t\t\t<FirstName>Tester</FirstName>\n\t\t\t<LastName>Smith</LastName>\n\t\t\t<Street>3103 10th ST N Apt 200</Street>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<InvoiceNo>101</InvoiceNo>\n\t\t\t<Amount>123.45</Amount>\n\t\t\t<DueDate>06/10/2020</DueDate>\n\t\t\t<c2m_uniqueid>99999</c2m_uniqueid>\n\t\t</address>\n\t\t<address>\n\t\t\t<FirstName>Testudo</FirstName>\n\t\t\t<LastName>Bays</LastName>\n\t\t\t<Street>6020 10th ST N Apt 100</Street>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<InvoiceNo>102</InvoiceNo>\n\t\t\t<Amount>678.90</Amount>\n\t\t\t<DueDate>06/12/2020</DueDate>\n\t\t\t<c2m_uniqueid>88888</c2m_uniqueid>\n\t\t</address>\n\t</addresses>\n</addressList>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/addressLists",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"addressLists"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/molpro/jobs/jobTemplate/submit - with addressListID",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "templateName",
+									"value": "mailMergeTemplate",
+									"type": "text"
+								},
+								{
+									"key": "listId",
+									"value": "{{addressListId}}",
+									"type": "text"
+								},
+								{
+									"key": "billingType",
+									"value": "Credit Card",
+									"type": "text"
+								},
+								{
+									"key": "billingName",
+									"value": "Joe Smith",
+									"type": "text"
+								},
+								{
+									"key": "billingCompany",
+									"value": "C2M LLC",
+									"type": "text"
+								},
+								{
+									"key": "billingAddress1",
+									"value": "3103 10th ST N Aot 310",
+									"type": "text"
+								},
+								{
+									"key": "billingAddress2",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "billingAddress3",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "billingCity",
+									"value": "Arlington",
+									"type": "text"
+								},
+								{
+									"key": "billingState",
+									"value": "VA",
+									"type": "text"
+								},
+								{
+									"key": "billingCountry",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "billingZip",
+									"value": "22201",
+									"type": "text"
+								},
+								{
+									"key": "billingNumber",
+									"value": "4111111111111111",
+									"type": "text"
+								},
+								{
+									"key": "billingMonth",
+									"value": "03",
+									"type": "text"
+								},
+								{
+									"key": "billingYear",
+									"value": "2024",
+									"type": "text"
+								},
+								{
+									"key": "billingCvv",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "billingCcType",
+									"value": "VI",
+									"type": "text"
+								},
+								{
+									"key": "appSignature",
+									"value": "POSTMAN_TEST",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/jobs/jobTemplate/submit",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"jobs",
+								"jobTemplate",
+								"submit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/molpro/jobs/jobTemplate/submit - with documentID",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "templateName",
+									"value": "mailMergeTemplate2",
+									"type": "text"
+								},
+								{
+									"key": "documentId",
+									"value": "{{docId}}",
+									"type": "text"
+								},
+								{
+									"key": "listId",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "billingType",
+									"value": "Credit Card",
+									"type": "text"
+								},
+								{
+									"key": "billingName",
+									"value": "Joe Smith",
+									"type": "text"
+								},
+								{
+									"key": "billingCompany",
+									"value": "C2M LLC",
+									"type": "text"
+								},
+								{
+									"key": "billingAddress1",
+									"value": "3103 10th ST N Aot 310",
+									"type": "text"
+								},
+								{
+									"key": "billingAddress2",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "billingAddress3",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "billingCity",
+									"value": "Arlington",
+									"type": "text"
+								},
+								{
+									"key": "billingState",
+									"value": "VA",
+									"type": "text"
+								},
+								{
+									"key": "billingCountry",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "billingZip",
+									"value": "22201",
+									"type": "text"
+								},
+								{
+									"key": "billingNumber",
+									"value": "4111111111111111",
+									"type": "text"
+								},
+								{
+									"key": "billingMonth",
+									"value": "03",
+									"type": "text"
+								},
+								{
+									"key": "billingYear",
+									"value": "2024",
+									"type": "text"
+								},
+								{
+									"key": "billingCvv",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "billingCcType",
+									"value": "VI",
+									"type": "text"
+								},
+								{
+									"key": "appSignature",
+									"value": "POSTMAN_TEST",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/jobs/jobTemplate/submit",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"jobs",
+								"jobTemplate",
+								"submit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/molpro/jobs/jobTemplate/submit - Secure Mailer",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "templateName",
+									"value": "Secure_Mailer",
+									"type": "text"
+								},
+								{
+									"key": "documentId",
+									"value": "{{docId}}",
+									"type": "text"
+								},
+								{
+									"key": "listId",
+									"value": "{{addressListId}}",
+									"type": "text"
+								},
+								{
+									"key": "billingType",
+									"value": "User Credit",
+									"type": "text"
+								},
+								{
+									"key": "billingName",
+									"value": "Joe Smith",
+									"type": "text"
+								},
+								{
+									"key": "billingCompany",
+									"value": "C2M LLC",
+									"type": "text"
+								},
+								{
+									"key": "billingAddress1",
+									"value": "3103 10th ST N Aot 310",
+									"type": "text"
+								},
+								{
+									"key": "billingAddress2",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "billingAddress3",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "billingCity",
+									"value": "Arlington",
+									"type": "text"
+								},
+								{
+									"key": "billingState",
+									"value": "VA",
+									"type": "text"
+								},
+								{
+									"key": "billingCountry",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "billingZip",
+									"value": "22201",
+									"type": "text"
+								},
+								{
+									"key": "billingNumber",
+									"value": "4111111111111111",
+									"type": "text"
+								},
+								{
+									"key": "billingMonth",
+									"value": "03",
+									"type": "text"
+								},
+								{
+									"key": "billingYear",
+									"value": "2024",
+									"type": "text"
+								},
+								{
+									"key": "billingCvv",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "billingCcType",
+									"value": "VI",
+									"type": "text"
+								},
+								{
+									"key": "appSignature",
+									"value": "POSTMAN_TEST",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/jobs/jobTemplate/submit",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"jobs",
+								"jobTemplate",
+								"submit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/molpro/jobs/<id>/cost",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(201);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var status = responseJson[\"job\"][\"status\"];",
+									"    tests[\"status = \" + status] = true; // this is for printing value to console",
+									"    pm.expect(Number(status)).to.be.above(0);",
+									"",
+									"    var description = responseJson[\"job\"][\"description\"];",
+									"    tests[\"description = \" + description] = true; // this is for printing value to console",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/jobs/{{jobId}}/cost",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"jobs",
+								"{{jobId}}",
+								"cost"
+							],
+							"query": [
+								{
+									"key": "paymentType",
+									"value": "User Credit",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/molpro/jobs/jobTemplate/submitonepiece",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(201);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var status = responseJson[\"document\"][\"status\"];",
+									"    tests[\"status = \" + status] = true; // this is for printing value to console",
+									"    pm.expect(status).to.eql(\"0\");",
+									"",
+									"    var description = responseJson[\"document\"][\"description\"];",
+									"    tests[\"description = \" + description] = true; // this is for printing value to console",
+									"    pm.expect(description).to.eql(\"Success\");",
+									"    ",
+									"    var docId = responseJson[\"document\"][\"id\"];",
+									"    pm.collectionVariables.set(\"letterDocId\", docId) ",
+									"    tests[\"docId = \" + docId] = true; // this is for printing value to console",
+									"    ",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "user-agent",
+								"type": "text",
+								"value": "my-app/0.0.1"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/xml"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "multipart/form-data"
+							}
+						],
+						"body": {
+							"mode": "forVAata",
+							"forVAata": [
+								{
+									"key": "document",
+									"type": "file",
+									"src": "/Users/mSmith/Downloads/Template #2 - 408 Nancy St.docx"
+								},
+								{
+									"key": "templateName",
+									"value": "LetterEnclosure",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "<address>\n\t<name>\n\t\t<firstName>TestOne</firstName>\n\t\t<lastName>Smith</lastName>\n\t</name>\n\t<organization>test org</organization>\n\t<address1>3103 10th ST N</address1>\n\t<address2>Apt 3</address2>\n\t<city>Arlington</city>\n\t<state>VA</state>\n\t<zip>22201</zip>\n\t<country>US</country>\n</address>\n",
+									"type": "text"
+								},
+								{
+									"key": "billingType",
+									"value": "User Credit",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/jobs/jobTemplate/submitonepiece",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"jobs",
+								"jobTemplate",
+								"submitonepiece"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Projects",
+			"item": [
+				{
+					"name": "/molpro/projects/<id>/",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(201);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var status = responseJson[\"job\"][\"status\"];",
+									"    tests[\"status = \" + status] = true; // this is for printing value to console",
+									"    pm.expect(Number(status)).to.be.above(0);",
+									"",
+									"    var description = responseJson[\"job\"][\"description\"];",
+									"    tests[\"description = \" + description] = true; // this is for printing value to console",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/projects/jobs?projectName=July 2020",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"projects",
+								"jobs"
+							],
+							"query": [
+								{
+									"key": "projectName",
+									"value": "July 2020"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/molpro/projects",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(201);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var status = responseJson[\"job\"][\"status\"];",
+									"    tests[\"status = \" + status] = true; // this is for printing value to console",
+									"    pm.expect(Number(status)).to.be.above(0);",
+									"",
+									"    var description = responseJson[\"job\"][\"description\"];",
+									"    tests[\"description = \" + description] = true; // this is for printing value to console",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/projects",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"projects"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Templates",
+			"item": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "letterDocId",
+			"value": ""
+		},
+		{
+			"key": "priorityLetterDocId",
+			"value": ""
+		},
+		{
+			"key": "notecardDocId",
+			"value": ""
+		}
+	]
+}
