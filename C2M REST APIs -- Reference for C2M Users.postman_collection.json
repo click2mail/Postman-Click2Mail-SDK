@@ -70,37 +70,37 @@
 								},
 								{
 									"key": "address1",
-									"value": "3103 10th ST N, Suite 201",
+									"value": "6010 California Cir Apt 100",
 									"type": "text"
 								},
 								{
 									"key": "city",
-									"value": "Arlington",
+									"value": "Rockville",
 									"type": "text"
 								},
 								{
 									"key": "state",
-									"value": "VA",
+									"value": "MD",
 									"type": "text"
 								},
 								{
 									"key": "zip",
-									"value": "22201",
+									"value": "20852",
 									"type": "text"
 								},
 								{
 									"key": "firstName",
-									"value": "Joe",
+									"value": "John",
 									"type": "text"
 								},
 								{
 									"key": "middleName",
-									"value": "Ken",
+									"value": "E",
 									"type": "text"
 								},
 								{
 									"key": "lastName",
-									"value": "Smith",
+									"value": "Doe",
 									"type": "text"
 								}
 							]
@@ -252,37 +252,37 @@
 								},
 								{
 									"key": "address1",
-									"value": "3103 10th ST N, Suite 201",
+									"value": "6010 California Cir Apt 100",
 									"type": "text"
 								},
 								{
 									"key": "city",
-									"value": "Arlington",
+									"value": "Rockville",
 									"type": "text"
 								},
 								{
 									"key": "state",
-									"value": "VA",
+									"value": "MD",
 									"type": "text"
 								},
 								{
 									"key": "zip",
-									"value": "22201",
+									"value": "20852",
 									"type": "text"
 								},
 								{
 									"key": "firstName",
-									"value": "Joe",
+									"value": "John",
 									"type": "text"
 								},
 								{
 									"key": "middleName",
-									"value": "Ken",
+									"value": "E",
 									"type": "text"
 								},
 								{
 									"key": "lastName",
-									"value": "Smith",
+									"value": "Doe",
 									"type": "text"
 								},
 								{
@@ -371,37 +371,37 @@
 								},
 								{
 									"key": "address1",
-									"value": "3103 10th ST N, Suite 201",
+									"value": "6010 California Cir Apt 200",
 									"type": "text"
 								},
 								{
 									"key": "city",
-									"value": "Arlington",
+									"value": "Rockville",
 									"type": "text"
 								},
 								{
 									"key": "state",
-									"value": "VA",
+									"value": "MD",
 									"type": "text"
 								},
 								{
 									"key": "zip",
-									"value": "22201",
+									"value": "20852",
 									"type": "text"
 								},
 								{
 									"key": "firstName",
-									"value": "Joe",
+									"value": "John",
 									"type": "text"
 								},
 								{
 									"key": "middleName",
-									"value": "Ken",
+									"value": "E",
 									"type": "text"
 								},
 								{
 									"key": "lastName",
-									"value": "Smith",
+									"value": "Doe",
 									"type": "text"
 								},
 								{
@@ -416,7 +416,7 @@
 								},
 								{
 									"key": "replyCity",
-									"value": "Arlington",
+									"value": "Rockville",
 									"type": "text"
 								},
 								{
@@ -510,37 +510,37 @@
 								},
 								{
 									"key": "address1",
-									"value": "3103 10th ST N, Suite 201",
+									"value": "6010 California Cir Apt 200",
 									"type": "text"
 								},
 								{
 									"key": "city",
-									"value": "Arlington",
+									"value": "Rockville",
 									"type": "text"
 								},
 								{
 									"key": "state",
-									"value": "VA",
+									"value": "MD",
 									"type": "text"
 								},
 								{
 									"key": "zip",
-									"value": "22201",
+									"value": "20852",
 									"type": "text"
 								},
 								{
 									"key": "firstName",
-									"value": "Joe",
+									"value": "John",
 									"type": "text"
 								},
 								{
 									"key": "middleName",
-									"value": "Ken",
+									"value": "E",
 									"type": "text"
 								},
 								{
 									"key": "lastName",
-									"value": "Smith",
+									"value": "Doe",
 									"type": "text"
 								},
 								{
@@ -634,37 +634,37 @@
 								},
 								{
 									"key": "address1",
-									"value": "3103 10th ST N, Suite 201",
+									"value": "6010 California Cir Apt 200",
 									"type": "text"
 								},
 								{
 									"key": "city",
-									"value": "Arlington",
+									"value": "Rockville",
 									"type": "text"
 								},
 								{
 									"key": "state",
-									"value": "VA",
+									"value": "MD",
 									"type": "text"
 								},
 								{
 									"key": "zip",
-									"value": "22201",
+									"value": "20852",
 									"type": "text"
 								},
 								{
 									"key": "firstName",
-									"value": "Joe",
+									"value": "John",
 									"type": "text"
 								},
 								{
 									"key": "middleName",
-									"value": "Ken",
+									"value": "E",
 									"type": "text"
 								},
 								{
 									"key": "lastName",
-									"value": "Smith",
+									"value": "Doe",
 									"type": "text"
 								},
 								{
@@ -679,7 +679,7 @@
 								},
 								{
 									"key": "phone",
-									"value": "703-521-9029",
+									"value": "301-529-0603",
 									"type": "text"
 								}
 							]
@@ -845,7 +845,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "<addresses>\n   <address>\n      <name>Joe Smith</name>\n      <address1>3103 10th ST N, Suite 201</address1>\n      <city>Arlington</city>\n      <state>VA</state>\n      <zip>22201</zip>\n   </address>\n   <address>\n      <name>Joe Balley</name>\n      <address1>3103 10th ST N, Suite 201</address1>\n      <city>Sockville</city>\n      <state>VA</state>\n      <zip>22201</zip>\n   </address>\n   <address>\n      <name>Anto Nee</name>\n      <city>Capsi</city>\n      <state>DD</state>\n      <zip>FDGCD</zip>\n   </address>\n   <address>\n      <name>Jenny Hill</name>\n      <address1>3000 Homestead Ave</address1>\n      <city>Holyoke</city>\n      <state>MA</state>\n      <postalCode>01040</postalCode>\n   </address>\n   <address>\n      <name>Jane Hise</name>\n      <address1>100 Covery</address1>\n      <city>Carbona</city>\n      <state>DF</state>\n      <zip>12 AB345</zip>\n   </address>\n   <address>\n      <name>Claire LaRouge</name>\n      <address1>69 Saint Louis</address1>\n      <city>Québec</city>\n      <state>QC</state>\n      <zip>G1R 3Z2</zip>\n   </address>\n   <address>\n      <name>Claire LaRouge</name>\n      <address1>69 Saint Louis</address1>\n      <city>Québec</city>\n      <state>QC</state>\n      <zip>G1R 3Z2</zip>\n      <country>CANADA</country>\n   </address>\n</addresses>",
+							"raw": "<addresses>\n   <address>\n      <name>John Doe</name>\n      <address1>6010 California Circle Apt 310</address1>\n      <city>Rockville</city>\n      <state>MD</state>\n      <zip>20852</zip>\n   </address>\n   <address>\n      <name>Joe Balley</name>\n      <address1>6010 California Circle Apt 310</address1>\n      <city>Sockville</city>\n      <state>MD</state>\n      <zip>20852</zip>\n   </address>\n   <address>\n      <name>Anto Nee</name>\n      <city>Capsi</city>\n      <state>DD</state>\n      <zip>FDGCD</zip>\n   </address>\n   <address>\n      <name>Jenny Hill</name>\n      <address1>3000 Homestead Ave</address1>\n      <city>Holyoke</city>\n      <state>MA</state>\n      <postalCode>01040</postalCode>\n   </address>\n   <address>\n      <name>Jane Hise</name>\n      <address1>100 Covery</address1>\n      <city>Carbona</city>\n      <state>DF</state>\n      <zip>12 AB345</zip>\n   </address>\n   <address>\n      <name>Claire LaRouge</name>\n      <address1>69 Saint Louis</address1>\n      <city>Québec</city>\n      <state>QC</state>\n      <zip>G1R 3Z2</zip>\n   </address>\n   <address>\n      <name>Claire LaRouge</name>\n      <address1>69 Saint Louis</address1>\n      <city>Québec</city>\n      <state>QC</state>\n      <zip>G1R 3Z2</zip>\n      <country>CANADA</country>\n   </address>\n</addresses>",
 							"options": {
 								"raw": {
 									"language": "xml"
@@ -942,99 +942,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "<addressList>\n  <addressListName>Test by C2M</addressListName>\n  <addressMappingId>1</addressMappingId>\n  <addresses>\n    <address>\n        <Firstname> Attn: Civil Process</Firstname>\n        <Lastname></Lastname>\n        <Organization>Allen County Sheriff</Organization>\n        <Address1>715 S Calhoun St ROOM 100</Address1>\n        <Address2></Address2>\n        <Address3></Address3>\n        <City>Fort Wayne</City>\n        <State>IN</State>\n        <Postalcode>52102</Postalcode>\n        <Country></Country>\n    </address>\n  </addresses>\n  </addressList>",
-							"options": {
-								"raw": {
-									"language": "xml"
-								}
-							}
-						},
-						"url": {
-							"raw": "https://{{subdomain}}.click2mail.com/molpro/addressLists",
-							"protocol": "https",
-							"host": [
-								"{{subdomain}}",
-								"click2mail",
-								"com"
-							],
-							"path": [
-								"molpro",
-								"addressLists"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "/molpro/addressLists (1 addr) Pete",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"exec": [
-									"pm.test(\"Status test\", function () {",
-									"    pm.response.to.have.status(200);",
-									"",
-									"    var responseJson = xml2Json(responseBody);",
-									"",
-									"    var status = responseJson[\"addressList\"][\"status\"];",
-									"    tests[\"status = \" + status] = true; // this is for printing value to console",
-									"    pm.expect(status).to.eql(\"3\");",
-									"",
-									"    var description = responseJson[\"addressList\"][\"description\"];",
-									"    tests[\"description = \" + description] = true; // this is for printing value to console",
-									"    pm.expect(description).to.eql(\"CASS Standardized\");",
-									"    ",
-									"    var addressListId = responseJson[\"addressList\"][\"id\"];",
-									"    postman.setGlobalVariable(\"addressListId\", addressListId) ",
-									"    tests[\"addressListId = \" + addressListId] = true; // this is for printing value to console",
-									"    ",
-									"});",
-									"",
-									"",
-									""
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"request": {
-						"auth": {
-							"type": "basic",
-							"basic": [
-								{
-									"key": "password",
-									"value": "{{password}}",
-									"type": "string"
-								},
-								{
-									"key": "username",
-									"value": "{{username}}",
-									"type": "string"
-								}
-							]
-						},
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"type": "text",
-								"value": "application/xml"
-							},
-							{
-								"key": "Accept",
-								"type": "text",
-								"value": "application/xml"
-							},
-							{
-								"key": "user-agent",
-								"type": "text",
-								"value": "my-app/0.0.1"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "<addressList>\n  <addressListName>Test for Pete</addressListName>\n  <addressMappingId>2012</addressMappingId>\n  <addresses>\n    <address>\n        <Name>Pete</Name>\n        <Street>715 S Calhoun St ROOM 100</Street>\n        <City>Fort Wayne</City>\n        <State>IN</State>\n        <Zip>52102</Zip>\n        <provider_site_name>Sunrise Associates LLC</provider_site_name>\n    </address>\n  </addresses>\n  </addressList>",
+							"raw": "<addressList>\n  <addressListName>Test by C2M</addressListName>\n  <addressMappingId>1</addressMappingId>\n  <addresses>\n    <address>\n        <Firstname> Attn: Civil Process</Firstname>\n        <Lastname></Lastname>\n        <Organization>Allen County Sheriff</Organization>\n        <Address1>715 S Calhoun St ROOM 100</Address1>\n        <Address2></Address2>\n        <Address3></Address3>\n        <City>Fort Wayne</City>\n        <State>IN</State>\n        <Postalcode>46802</Postalcode>\n        <Country></Country>\n    </address>\n  </addresses>\n  </addressList>",
 							"options": {
 								"raw": {
 									"language": "xml"
@@ -1126,7 +1034,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "<addressList>\n\t<addressListName>test_Alex</addressListName>\n\t<addressMappingId>2</addressMappingId>\n\t<addresses>\n\t\t<address>\n\t\t\t<First_name>Test</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>TestUK</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>14 Tottenham Court Road</Address1>\n\t\t\t<Address2>Room 67</Address2>\n\t\t\t<City>London</City>\n\t\t\t<State/>\n\t\t\t<Zip>W1T 1JY</Zip>\n\t\t\t<Country_non-US>UK</Country_non-US>\n\t\t</address>\n\t</addresses>\n</addressList>",
+							"raw": "<addressList>\n\t<addressListName>test_Alex</addressListName>\n\t<addressMappingId>2</addressMappingId>\n\t<addresses>\n\t\t<address>\n\t\t\t<First_name>Test</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>6010 California Circle</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Rockville</City>\n\t\t\t<State>MD</State>\n\t\t\t<Zip>20852</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>TestUK</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>14 Tottenham Court Road</Address1>\n\t\t\t<Address2>Room 67</Address2>\n\t\t\t<City>London</City>\n\t\t\t<State/>\n\t\t\t<Zip>W1T 1JY</Zip>\n\t\t\t<Country_non-US>UK</Country_non-US>\n\t\t</address>\n\t</addresses>\n</addressList>",
 							"options": {
 								"raw": {
 									"language": "xml"
@@ -1218,7 +1126,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "<addressList>\n\t<addressListName>test_Alex</addressListName>\n\t<addressMappingId>2</addressMappingId>\n\t<addresses>\n\t\t<address>\n\t\t\t<First_name>Macy</First_name>\n\t\t\t<Last_name>Mores</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Philip</First_name>\n\t\t\t<Last_name>Mores</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Sockville</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Claire</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>14 Tottenham Court Road</Address1>\n\t\t\t<Address2>Room 67</Address2>\n\t\t\t<City>London</City>\n\t\t\t<State/>\n\t\t\t<Zip>W1T 1JY</Zip>\n\t\t\t<Country_non-US>UK</Country_non-US>\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Claire</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>14 Tottenham Court Road</Address1>\n\t\t\t<Address2>Room 67</Address2>\n\t\t\t<City>London</City>\n\t\t\t<State/>\n\t\t\t<Zip>W1T 1JY</Zip>\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>FOO</First_name>\n\t\t\t<Last_name>BAR</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>ASDF</Address1>\n\t\t\t<Address2>1234</Address2>\n\t\t\t<City>HGTS</City>\n\t\t\t<State/>\n\t\t\t<Zip>W1T 1JY</Zip>\n\t\t</address>\n\t</addresses>\n</addressList>",
+							"raw": "<addressList>\n\t<addressListName>test_Alex</addressListName>\n\t<addressMappingId>2</addressMappingId>\n\t<addresses>\n\t\t<address>\n\t\t\t<First_name>Macy</First_name>\n\t\t\t<Last_name>Mores</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>6010 California Circle</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Rockville</City>\n\t\t\t<State>MD</State>\n\t\t\t<Zip>20852</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Philip</First_name>\n\t\t\t<Last_name>Mores</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>6010 California Circle</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Sockville</City>\n\t\t\t<State>MD</State>\n\t\t\t<Zip>20852</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Claire</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>14 Tottenham Court Road</Address1>\n\t\t\t<Address2>Room 67</Address2>\n\t\t\t<City>London</City>\n\t\t\t<State/>\n\t\t\t<Zip>W1T 1JY</Zip>\n\t\t\t<Country_non-US>UK</Country_non-US>\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Claire</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>14 Tottenham Court Road</Address1>\n\t\t\t<Address2>Room 67</Address2>\n\t\t\t<City>London</City>\n\t\t\t<State/>\n\t\t\t<Zip>W1T 1JY</Zip>\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>FOO</First_name>\n\t\t\t<Last_name>BAR</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>ASDF</Address1>\n\t\t\t<Address2>1234</Address2>\n\t\t\t<City>HGTS</City>\n\t\t\t<State/>\n\t\t\t<Zip>W1T 1JY</Zip>\n\t\t</address>\n\t</addresses>\n</addressList>",
 							"options": {
 								"raw": {
 									"language": "xml"
@@ -1310,7 +1218,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "<addressList>\n\t<addressListName>test_Apr_01_2020</addressListName>\n\t<addressMappingId>2</addressMappingId>\n\t<addresses>\n\t\t<address>\n\t\t\t<First_name>Test</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Rockdville</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Test</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testthree</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testfour</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testfive</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testsix</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testseven</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testeight</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testnine</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testten</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testeleven</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testtwele</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testthirteen</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testfourteen</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testfifteen</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testsixteen</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testseventeen</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testeighteen</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testnineteen</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testtwenty</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t</addresses>\n</addressList>",
+							"raw": "<addressList>\n\t<addressListName>test_Apr_01_2020</addressListName>\n\t<addressMappingId>2</addressMappingId>\n\t<addresses>\n\t\t<address>\n\t\t\t<First_name>Test</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>6010 California Circle</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Rockdville</City>\n\t\t\t<State>MD</State>\n\t\t\t<Zip>20852</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Test</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>6010 California Circle</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Rockville</City>\n\t\t\t<State>MD</State>\n\t\t\t<Zip>20852</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testthree</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>6010 California Circle</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Rockville</City>\n\t\t\t<State>MD</State>\n\t\t\t<Zip>20852</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testfour</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>6010 California Circle</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Rockville</City>\n\t\t\t<State>MD</State>\n\t\t\t<Zip>20852</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testfive</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>6010 California Circle</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Rockville</City>\n\t\t\t<State>MD</State>\n\t\t\t<Zip>20852</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testsix</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>6010 California Circle</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Rockville</City>\n\t\t\t<State>MD</State>\n\t\t\t<Zip>20852</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testseven</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>6010 California Circle</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Rockville</City>\n\t\t\t<State>MD</State>\n\t\t\t<Zip>20852</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testeight</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>6010 California Circle</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Rockville</City>\n\t\t\t<State>MD</State>\n\t\t\t<Zip>20852</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testnine</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>6010 California Circle</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Rockville</City>\n\t\t\t<State>MD</State>\n\t\t\t<Zip>20852</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testten</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>6010 California Circle</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Rockville</City>\n\t\t\t<State>MD</State>\n\t\t\t<Zip>20852</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testeleven</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>6010 California Circle</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Rockville</City>\n\t\t\t<State>MD</State>\n\t\t\t<Zip>20852</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testtwele</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>6010 California Circle</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Rockville</City>\n\t\t\t<State>MD</State>\n\t\t\t<Zip>20852</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testthirteen</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>6010 California Circle</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Rockville</City>\n\t\t\t<State>MD</State>\n\t\t\t<Zip>20852</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testfourteen</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>6010 California Circle</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Rockville</City>\n\t\t\t<State>MD</State>\n\t\t\t<Zip>20852</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testfifteen</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>6010 California Circle</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Rockville</City>\n\t\t\t<State>MD</State>\n\t\t\t<Zip>20852</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testsixteen</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>6010 California Circle</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Rockville</City>\n\t\t\t<State>MD</State>\n\t\t\t<Zip>20852</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testseventeen</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>6010 California Circle</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Rockville</City>\n\t\t\t<State>MD</State>\n\t\t\t<Zip>20852</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testeighteen</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>6010 California Circle</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Rockville</City>\n\t\t\t<State>MD</State>\n\t\t\t<Zip>20852</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testnineteen</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>6010 California Circle</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Rockville</City>\n\t\t\t<State>MD</State>\n\t\t\t<Zip>20852</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testtwenty</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>6010 California Circle</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Rockville</City>\n\t\t\t<State>MD</State>\n\t\t\t<Zip>20852</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t</addresses>\n</addressList>",
 							"options": {
 								"raw": {
 									"language": "xml"
@@ -1404,8 +1312,8 @@
 							}
 						],
 						"body": {
-							"mode": "raw",
-							"raw": "<addressList>\n\t<addressListName>test_Apr_01_2020</addressListName>\n\t<addressMappingId>2</addressMappingId>\n\t<addresses>\n\t\t<address>\n\t\t\t<First_name>Test</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Test</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testthree</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testfour</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testfive</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testsix</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testseven</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testeight</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testnine</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testten</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testeleven</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testtwele</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testthirteen</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testfourteen</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testfifteen</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testsixteen</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testseventeen</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testeighteen</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testnineteen</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t\t<address>\n\t\t\t<First_name>Testtwenty</First_name>\n\t\t\t<Last_name>Smith</Last_name>\n\t\t\t<organization>test org</organization>\n\t\t\t<Address1>3103 10th ST N</Address1>\n\t\t\t<Address2>Apt 3</Address2>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<Country_non-US />\n\t\t</address>\n\t</addresses>\n</addressList>",
+							"mode": "urlencoded",
+							"urlencoded": [],
 							"options": {
 								"raw": {
 									"language": "xml"
@@ -2032,27 +1940,27 @@
 							"urlencoded": [
 								{
 									"key": "billingName",
-									"value": "Joe Smith",
+									"value": "John Doe",
 									"type": "text"
 								},
 								{
 									"key": "billingAddress1",
-									"value": "3103 10th ST N, Suite 201",
+									"value": "6010 California Cir Apt 100",
 									"type": "text"
 								},
 								{
 									"key": "billingCity",
-									"value": "Arlington",
+									"value": "Rockville",
 									"type": "text"
 								},
 								{
 									"key": "billingState",
-									"value": "VA",
+									"value": "MD",
 									"type": "text"
 								},
 								{
 									"key": "billingZip",
-									"value": "22201-4868",
+									"value": "20852-4868",
 									"type": "text"
 								},
 								{
@@ -2346,8 +2254,8 @@
 							}
 						],
 						"body": {
-							"mode": "forVAata",
-							"forVAata": [
+							"mode": "formdata",
+							"formdata": [
 								{
 									"key": "documentFormat",
 									"value": "PNG",
@@ -2454,8 +2362,8 @@
 							}
 						],
 						"body": {
-							"mode": "forVAata",
-							"forVAata": [
+							"mode": "formdata",
+							"formdata": [
 								{
 									"key": "documentFormat",
 									"value": "PNG",
@@ -2656,8 +2564,8 @@
 							}
 						],
 						"body": {
-							"mode": "forVAata",
-							"forVAata": [
+							"mode": "formdata",
+							"formdata": [
 								{
 									"key": "documentFormat",
 									"value": "PDF",
@@ -2852,8 +2760,8 @@
 							}
 						],
 						"body": {
-							"mode": "forVAata",
-							"forVAata": [
+							"mode": "formdata",
+							"formdata": [
 								{
 									"key": "documentFormat",
 									"value": "PDF",
@@ -2960,8 +2868,8 @@
 							}
 						],
 						"body": {
-							"mode": "forVAata",
-							"forVAata": [
+							"mode": "formdata",
+							"formdata": [
 								{
 									"key": "documentFormat",
 									"value": "PDF",
@@ -3068,8 +2976,8 @@
 							}
 						],
 						"body": {
-							"mode": "forVAata",
-							"forVAata": [
+							"mode": "formdata",
+							"formdata": [
 								{
 									"key": "documentFormat",
 									"value": "PDF",
@@ -3171,8 +3079,8 @@
 							}
 						],
 						"body": {
-							"mode": "forVAata",
-							"forVAata": [
+							"mode": "formdata",
+							"formdata": [
 								{
 									"key": "documentFormat",
 									"value": "PDF",
@@ -3346,8 +3254,8 @@
 							}
 						],
 						"body": {
-							"mode": "forVAata",
-							"forVAata": [
+							"mode": "formdata",
+							"formdata": [
 								{
 									"key": "documentFormat",
 									"value": "PDF",
@@ -3361,7 +3269,7 @@
 								{
 									"key": "file",
 									"type": "file",
-									"src": "passport-checklist-regular.pdf"
+									"src": "/Users/mlavannis/Downloads/BraswellMariaJania113617(B1)-print (1).pdf"
 								},
 								{
 									"key": "documentName",
@@ -3455,8 +3363,8 @@
 							}
 						],
 						"body": {
-							"mode": "forVAata",
-							"forVAata": [
+							"mode": "formdata",
+							"formdata": [
 								{
 									"key": "documentFormat",
 									"value": "PDF",
@@ -3564,8 +3472,8 @@
 							}
 						],
 						"body": {
-							"mode": "forVAata",
-							"forVAata": [
+							"mode": "formdata",
+							"formdata": [
 								{
 									"key": "documentFormat",
 									"value": "PDF",
@@ -4421,7 +4329,7 @@
 								},
 								{
 									"key": "billingName",
-									"value": "Joe Smith",
+									"value": "John Doe",
 									"type": "text"
 								},
 								{
@@ -4431,17 +4339,17 @@
 								},
 								{
 									"key": "billingAddress1",
-									"value": "3103 10th ST N, Suite 201",
+									"value": "6010 California Cir Apt 100",
 									"type": "text"
 								},
 								{
 									"key": "billingCity",
-									"value": "Arlington",
+									"value": "Rockville",
 									"type": "text"
 								},
 								{
 									"key": "billingState",
-									"value": "VA",
+									"value": "MD",
 									"type": "text"
 								},
 								{
@@ -4452,7 +4360,7 @@
 								},
 								{
 									"key": "billingZip",
-									"value": "22201-4868",
+									"value": "20852-4868",
 									"type": "text"
 								},
 								{
@@ -4558,48 +4466,6 @@
 									"key": "billingType",
 									"value": "User Credit",
 									"type": "text"
-								},
-								{
-									"key": "shipName",
-									"value": "Joe Smith",
-									"type": "text",
-									"disabled": true
-								},
-								{
-									"key": "shipAddress1",
-									"value": "3103 10th ST N, Suite 201",
-									"type": "text",
-									"disabled": true
-								},
-								{
-									"key": "shipCity",
-									"value": "Arlington",
-									"type": "text",
-									"disabled": true
-								},
-								{
-									"key": "shipState",
-									"value": "VA",
-									"type": "text",
-									"disabled": true
-								},
-								{
-									"key": "shipZip",
-									"value": "22201",
-									"type": "text",
-									"disabled": true
-								},
-								{
-									"key": "shipMethod",
-									"value": "Free",
-									"type": "text",
-									"disabled": true
-								},
-								{
-									"key": "shipperName",
-									"value": "C2M LLC",
-									"type": "text",
-									"disabled": true
 								}
 							]
 						},
@@ -4746,7 +4612,7 @@
 								},
 								{
 									"key": "appSignature",
-									"value": "debtcleanse_test_MSmith",
+									"value": "debtcleanse_test_Mlavannis",
 									"type": "text",
 									"disabled": true
 								},
@@ -5086,78 +4952,6 @@
 									"key": "billingType",
 									"value": "Invoice",
 									"type": "text"
-								},
-								{
-									"key": "billingName",
-									"value": "Joe Smith",
-									"type": "text",
-									"disabled": true
-								},
-								{
-									"key": "billingCompany",
-									"value": "Click2Maill LLC",
-									"type": "text",
-									"disabled": true
-								},
-								{
-									"key": "billingAddress1",
-									"value": "3103 10th ST N, Suite 201",
-									"type": "text",
-									"disabled": true
-								},
-								{
-									"key": "billingCity",
-									"value": "Arlington",
-									"type": "text",
-									"disabled": true
-								},
-								{
-									"key": "billingState",
-									"value": "VA",
-									"type": "text",
-									"disabled": true
-								},
-								{
-									"key": "billingCountry",
-									"value": "United States",
-									"type": "text",
-									"disabled": true
-								},
-								{
-									"key": "billingZip",
-									"value": "22201-4868",
-									"type": "text",
-									"disabled": true
-								},
-								{
-									"key": "billingNumber",
-									"value": "4111111111111111",
-									"type": "text",
-									"disabled": true
-								},
-								{
-									"key": "billingMonth",
-									"value": "01",
-									"type": "text",
-									"disabled": true
-								},
-								{
-									"key": "billingYear",
-									"value": "2030",
-									"type": "text",
-									"disabled": true
-								},
-								{
-									"key": "billingCvv",
-									"value": "123",
-									"type": "text",
-									"disabled": true
-								},
-								{
-									"key": "billingCcType",
-									"value": "VI",
-									"type": "text",
-									"disabled": true
 								}
 							]
 						},
@@ -5225,7 +5019,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://{{subdomain}}.click2mail.com/molpro/jobs/11452870",
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/jobs/{{jobId}}",
 							"protocol": "https",
 							"host": [
 								"{{subdomain}}",
@@ -5235,7 +5029,7 @@
 							"path": [
 								"molpro",
 								"jobs",
-								"11452870"
+								"{{jobId}}"
 							]
 						}
 					},
@@ -5493,72 +5287,6 @@
 									"key": "id",
 									"value": "{{jobId}}",
 									"type": "text"
-								},
-								{
-									"key": "billingType",
-									"value": "Credit Card",
-									"type": "text"
-								},
-								{
-									"key": "billingName",
-									"value": "Joe Smith",
-									"type": "text"
-								},
-								{
-									"key": "billingCompany",
-									"value": "Click2Maill LLC",
-									"type": "text"
-								},
-								{
-									"key": "billingAddress1",
-									"value": "3103 10th ST N, Suite 201",
-									"type": "text"
-								},
-								{
-									"key": "billingCity",
-									"value": "Arlington",
-									"type": "text"
-								},
-								{
-									"key": "billingState",
-									"value": "VA",
-									"type": "text"
-								},
-								{
-									"key": "billingCountry",
-									"value": "United States",
-									"type": "text",
-									"disabled": true
-								},
-								{
-									"key": "billingZip",
-									"value": "22201-4868",
-									"type": "text"
-								},
-								{
-									"key": "billingNumber",
-									"value": "4111111111111111",
-									"type": "text"
-								},
-								{
-									"key": "billingMonth",
-									"value": "01",
-									"type": "text"
-								},
-								{
-									"key": "billingYear",
-									"value": "2030",
-									"type": "text"
-								},
-								{
-									"key": "billingCvv",
-									"value": "123",
-									"type": "text"
-								},
-								{
-									"key": "billingCcType",
-									"value": "VI",
-									"type": "text"
 								}
 							]
 						},
@@ -5739,8 +5467,8 @@
 						"method": "POST",
 						"header": [],
 						"body": {
-							"mode": "forVAata",
-							"forVAata": [
+							"mode": "formdata",
+							"formdata": [
 								{
 									"key": "templateName",
 									"value": "singlePieceTest",
@@ -5750,11 +5478,11 @@
 									"key": "document",
 									"description": "Required File to be upload in a multipart section. Request format should be multipart/form-data.",
 									"type": "file",
-									"src": "/Users/mSmith/Downloads/PSForm_3600_FCM1.pdf"
+									"src": "/Users/mlavannis/Downloads/PSForm_3600_FCM1.pdf"
 								},
 								{
 									"key": "address",
-									"value": "<address>\n<name>Jitendra Chandani</name>\n<organization>JIVA</organization>\n<address1>One Church Street</address1>\n<address2>Suite# 401</address2>\n<address3></address3>\n<city>Arlington</city>\n<state>VA</state>\n<postalCode>20850</postalCode>\n<country>US</country>\n</address>",
+									"value": "<address>\n<name>Jitendra Chandani</name>\n<organization>JIVA</organization>\n<address1>One Church Street</address1>\n<address2>Suite# 401</address2>\n<address3></address3>\n<city>Rockville</city>\n<state>MD</state>\n<postalCode>20850</postalCode>\n<country>US</country>\n</address>",
 									"description": "Required An XML string for recipient address:",
 									"type": "text"
 								},
@@ -5766,7 +5494,7 @@
 								},
 								{
 									"key": "billingName",
-									"value": "Joe Smith",
+									"value": "John Doe",
 									"description": " Required(Credit Card only)",
 									"type": "text"
 								},
@@ -5778,25 +5506,25 @@
 								},
 								{
 									"key": "billingAddress1",
-									"value": "3103 10th ST N Aot 310",
+									"value": "6010 California Circle Aot 100",
 									"description": " Required(Credit Card only)",
 									"type": "text"
 								},
 								{
 									"key": "billingCity",
-									"value": "Arlington",
+									"value": "Rockville",
 									"description": " Required(Credit Card only)",
 									"type": "text"
 								},
 								{
 									"key": "billingState",
-									"value": "VA",
+									"value": "MD",
 									"description": " Required(Credit Card only)",
 									"type": "text"
 								},
 								{
 									"key": "billingZip",
-									"value": "22201",
+									"value": "20852",
 									"description": " Optional(Credit Card only)",
 									"type": "text"
 								},
@@ -5924,7 +5652,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "<addressList>\n\t<addressListName>test_Apr_01_2020</addressListName>\n\t<addressMappingId>{{addressMappingID}}</addressMappingId>\n\t<addresses>\n\t\t<address>\n\t\t\t<FirstName>Tester</FirstName>\n\t\t\t<LastName>Smith</LastName>\n\t\t\t<Street>3103 10th ST N Apt 200</Street>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<InvoiceNo>101</InvoiceNo>\n\t\t\t<Amount>123.45</Amount>\n\t\t\t<DueDate>06/10/2020</DueDate>\n\t\t\t<c2m_uniqueid>99999</c2m_uniqueid>\n\t\t</address>\n\t\t<address>\n\t\t\t<FirstName>Testudo</FirstName>\n\t\t\t<LastName>Bays</LastName>\n\t\t\t<Street>6020 10th ST N Apt 100</Street>\n\t\t\t<City>Arlington</City>\n\t\t\t<State>VA</State>\n\t\t\t<Zip>22201</Zip>\n\t\t\t<InvoiceNo>102</InvoiceNo>\n\t\t\t<Amount>678.90</Amount>\n\t\t\t<DueDate>06/12/2020</DueDate>\n\t\t\t<c2m_uniqueid>88888</c2m_uniqueid>\n\t\t</address>\n\t</addresses>\n</addressList>",
+							"raw": "<addressList>\n\t<addressListName>test_Apr_01_2020</addressListName>\n\t<addressMappingId>{{addressMappingID}}</addressMappingId>\n\t<addresses>\n\t\t<address>\n\t\t\t<FirstName>Tester</FirstName>\n\t\t\t<LastName>Smith</LastName>\n\t\t\t<Street>6070 California Circle Apt 200</Street>\n\t\t\t<City>Rockville</City>\n\t\t\t<State>MD</State>\n\t\t\t<Zip>20852</Zip>\n\t\t\t<InvoiceNo>101</InvoiceNo>\n\t\t\t<Amount>123.45</Amount>\n\t\t\t<DueDate>06/10/2020</DueDate>\n\t\t\t<c2m_uniqueid>99999</c2m_uniqueid>\n\t\t</address>\n\t\t<address>\n\t\t\t<FirstName>Testudo</FirstName>\n\t\t\t<LastName>Bays</LastName>\n\t\t\t<Street>6020 California Circle Apt 100</Street>\n\t\t\t<City>Rockville</City>\n\t\t\t<State>MD</State>\n\t\t\t<Zip>20852</Zip>\n\t\t\t<InvoiceNo>102</InvoiceNo>\n\t\t\t<Amount>678.90</Amount>\n\t\t\t<DueDate>06/12/2020</DueDate>\n\t\t\t<c2m_uniqueid>88888</c2m_uniqueid>\n\t\t</address>\n\t</addresses>\n</addressList>",
 							"options": {
 								"raw": {
 									"language": "xml"
@@ -5987,7 +5715,7 @@
 								},
 								{
 									"key": "billingName",
-									"value": "Joe Smith",
+									"value": "John Doe",
 									"type": "text"
 								},
 								{
@@ -5997,7 +5725,7 @@
 								},
 								{
 									"key": "billingAddress1",
-									"value": "3103 10th ST N Aot 310",
+									"value": "6010 California Circle Aot 100",
 									"type": "text"
 								},
 								{
@@ -6014,12 +5742,12 @@
 								},
 								{
 									"key": "billingCity",
-									"value": "Arlington",
+									"value": "Rockville",
 									"type": "text"
 								},
 								{
 									"key": "billingState",
-									"value": "VA",
+									"value": "MD",
 									"type": "text"
 								},
 								{
@@ -6030,7 +5758,7 @@
 								},
 								{
 									"key": "billingZip",
-									"value": "22201",
+									"value": "20852",
 									"type": "text"
 								},
 								{
@@ -6128,7 +5856,7 @@
 								},
 								{
 									"key": "billingName",
-									"value": "Joe Smith",
+									"value": "John Doe",
 									"type": "text"
 								},
 								{
@@ -6138,7 +5866,7 @@
 								},
 								{
 									"key": "billingAddress1",
-									"value": "3103 10th ST N Aot 310",
+									"value": "6010 California Circle Aot 100",
 									"type": "text"
 								},
 								{
@@ -6155,12 +5883,12 @@
 								},
 								{
 									"key": "billingCity",
-									"value": "Arlington",
+									"value": "Rockville",
 									"type": "text"
 								},
 								{
 									"key": "billingState",
-									"value": "VA",
+									"value": "MD",
 									"type": "text"
 								},
 								{
@@ -6171,7 +5899,7 @@
 								},
 								{
 									"key": "billingZip",
-									"value": "22201",
+									"value": "20852",
 									"type": "text"
 								},
 								{
@@ -6269,7 +5997,7 @@
 								},
 								{
 									"key": "billingName",
-									"value": "Joe Smith",
+									"value": "John Doe",
 									"type": "text"
 								},
 								{
@@ -6279,7 +6007,7 @@
 								},
 								{
 									"key": "billingAddress1",
-									"value": "3103 10th ST N Aot 310",
+									"value": "6010 California Circle Aot 100",
 									"type": "text"
 								},
 								{
@@ -6296,12 +6024,12 @@
 								},
 								{
 									"key": "billingCity",
-									"value": "Arlington",
+									"value": "Rockville",
 									"type": "text"
 								},
 								{
 									"key": "billingState",
-									"value": "VA",
+									"value": "MD",
 									"type": "text"
 								},
 								{
@@ -6312,7 +6040,7 @@
 								},
 								{
 									"key": "billingZip",
-									"value": "22201",
+									"value": "20852",
 									"type": "text"
 								},
 								{
@@ -6443,7 +6171,7 @@
 					"response": []
 				},
 				{
-					"name": "/molpro/jobs/jobTemplate/submitonepiece",
+					"name": "/molpro/jobs/<id>/duplicate",
 					"event": [
 						{
 							"listen": "test",
@@ -6454,17 +6182,17 @@
 									"",
 									"    var responseJson = xml2Json(responseBody);",
 									"",
-									"    var status = responseJson[\"document\"][\"status\"];",
+									"    var status = responseJson[\"job\"][\"status\"];",
 									"    tests[\"status = \" + status] = true; // this is for printing value to console",
 									"    pm.expect(status).to.eql(\"0\");",
 									"",
-									"    var description = responseJson[\"document\"][\"description\"];",
+									"    var description = responseJson[\"job\"][\"description\"];",
 									"    tests[\"description = \" + description] = true; // this is for printing value to console",
 									"    pm.expect(description).to.eql(\"Success\");",
-									"    ",
-									"    var docId = responseJson[\"document\"][\"id\"];",
-									"    pm.collectionVariables.set(\"letterDocId\", docId) ",
-									"    tests[\"docId = \" + docId] = true; // this is for printing value to console",
+									"",
+									"    var jobId = responseJson[\"job\"][\"id\"];",
+									"    postman.setGlobalVariable(\"jobId\", jobId) ",
+									"   tests[\"jobId = \" + jobId] = true; // this is for printing value to console",
 									"    ",
 									"});",
 									"",
@@ -6492,50 +6220,13 @@
 							]
 						},
 						"method": "POST",
-						"header": [
-							{
-								"key": "user-agent",
-								"type": "text",
-								"value": "my-app/0.0.1"
-							},
-							{
-								"key": "Accept",
-								"type": "text",
-								"value": "application/xml"
-							},
-							{
-								"key": "Content-Type",
-								"type": "text",
-								"value": "multipart/form-data"
-							}
-						],
+						"header": [],
 						"body": {
-							"mode": "forVAata",
-							"forVAata": [
-								{
-									"key": "document",
-									"type": "file",
-									"src": "/Users/mSmith/Downloads/Template #2 - 408 Nancy St.docx"
-								},
-								{
-									"key": "templateName",
-									"value": "LetterEnclosure",
-									"type": "text"
-								},
-								{
-									"key": "address",
-									"value": "<address>\n\t<name>\n\t\t<firstName>TestOne</firstName>\n\t\t<lastName>Smith</lastName>\n\t</name>\n\t<organization>test org</organization>\n\t<address1>3103 10th ST N</address1>\n\t<address2>Apt 3</address2>\n\t<city>Arlington</city>\n\t<state>VA</state>\n\t<zip>22201</zip>\n\t<country>US</country>\n</address>\n",
-									"type": "text"
-								},
-								{
-									"key": "billingType",
-									"value": "User Credit",
-									"type": "text"
-								}
-							]
+							"mode": "urlencoded",
+							"urlencoded": []
 						},
 						"url": {
-							"raw": "https://{{subdomain}}.click2mail.com/molpro/jobs/jobTemplate/submitonepiece",
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/jobs/195795/duplicate",
 							"protocol": "https",
 							"host": [
 								"{{subdomain}}",
@@ -6545,8 +6236,8 @@
 							"path": [
 								"molpro",
 								"jobs",
-								"jobTemplate",
-								"submitonepiece"
+								"195795",
+								"duplicate"
 							]
 						}
 					},
