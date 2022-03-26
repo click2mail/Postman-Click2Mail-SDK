@@ -10,5 +10,5 @@ https://www.screencast.com/t/j9BgU5YU
 5. To create a production environment, duplicate the stage environment
 https://www.screencast.com/t/XCFo9j5oVqsh
 6. Repeat steps 3 & 4 for the production environment
-Step 7. For production environment change the following to point to production
+7. For production environment change the following to point to production
 https://www.screencast.com/t/UqgRYEYQ
