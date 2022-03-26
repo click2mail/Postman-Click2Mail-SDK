@@ -1,4 +1,14 @@
 # Postman-Click2Mail-SDK
 Reference collection of Click2Mail APIs in Postman
 
-Import these 3 json files into Postman. One is the collection, other is the environment and the third is the global variables. Once imported, go to the environment (stage_user2) and add your stage username and password. You should be good to go for testing in stage. To create a production environment, duplicate the stage_user2 environment, replace "stage-rest" and "stage-batch" with "rest" and "batch" respectively. Add your production username and password. 
+1. Download the 3 json files.
+2. Import them into postman (you can download Postman for free from https://www.postman.com/downloads/)
+3. Set the environment to stage-user2 and click the "eye" icon
+https://www.screencast.com/t/Rfrib6NS
+4. Set your stage username and password
+https://www.screencast.com/t/j9BgU5YU
+5. To create a production environment, duplicate the stage environment
+https://www.screencast.com/t/XCFo9j5oVqsh
+6. Repeat steps 3 & 4 for the production environment
+Step 7. For production environment change the following to point to production
+https://www.screencast.com/t/UqgRYEYQ
