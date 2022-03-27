@@ -12,3 +12,6 @@ https://www.screencast.com/t/XCFo9j5oVqsh
 6. Repeat steps 3 & 4 for the production environment
 7. For production environment change the following to point to production
 https://www.screencast.com/t/UqgRYEYQ
+
+Here is a video which shows step-by-step how to create personalized (mail merged) mail with C2M APIs. 
+https://www.loom.com/share/a82711700c0442a4acbd33a8ca2deb11
