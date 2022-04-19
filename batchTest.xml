@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <batch xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> 
+   <filename>batchTest.pdf</filename> 
+   <appSignature>PostmanC2MTests</appSignature>
+   <job> 
+     <startingPage>1</startingPage> 
+	 <endingPage>3</endingPage>
+	 <printProductionOptions> 
+	   <documentClass>Letter 8.5 x 11</documentClass>
+	   <layout>Address on Separate Page</layout>
+	   <productionTime>Next Day</productionTime>
+	   <envelope>#10 Double Window</envelope> 
+	   <color>Black and White</color> 
+	   <paperType>White 24#</paperType> 
+	   <printOption>Printing One side</printOption> 
+	   <mailClass>First Class</mailClass>
+	 </printProductionOptions> 
+	 <returnAddress> 
+	   <name>Mahesh Lavannis</name> 
+	   <organization>C2M LLC</organization> 
+	   <address1>6070 California Circle Apt 310</address1> 
+	   <address2></address2>
+	   <city>Rockville</city> 
+	   <state>MD</state> 
+	   <postalCode>20852</postalCode> 
+	 </returnAddress>
+	 <ancillaryEndorsement></ancillaryEndorsement>
+	 <recipients> 
+	   <address> 
+	     <name>Harry Potter</name> 
+	   	 <organization>Wizard Inc</organization> 
+	   	 <address1>6030 California Circle Apt 110</address1> 
+	     <address2></address2>
+	     <address3></address3>
+	     <city>Rockville</city> 
+	     <state>MD</state> 
+	     <postalCode>20852</postalCode> 
+	     <country/> 
+		 <c2m_uniqueid/>
+	  </address> 
+	  <address> 
+	     <name>Lisa Porter</name> 
+	   	 <organization>City Museum</organization> 
+	   	 <address1>6010 California Circle Apt 210</address1> 
+	     <address2></address2>
+	     <address3></address3>
+	     <city>Rockville</city> 
+	     <state>MD</state> 
+	     <postalCode>20852</postalCode> 
+	     <country/> 
+		 <c2m_uniqueid/>
+	  </address> 
+	</recipients>
+  </job>
+   <job> 
+     <startingPage>10</startingPage> 
+	 <endingPage>12</endingPage>
+	 <printProductionOptions> 
+	   <documentClass>Letter 8.5 x 11</documentClass>
+	   <layout>Address on Separate Page</layout>
+	   <productionTime>Next Day</productionTime>
+	   <envelope>#10 Double Window</envelope> 
+	   <color>Black and White</color> 
+	   <paperType>White 24#</paperType> 
+	   <printOption>Printing One side</printOption> 
+	   <mailClass>First Class</mailClass>
+	 </printProductionOptions> 
+	 <returnAddress> 
+	   <name>Mahesh Lavannis</name> 
+	   <organization>C2M LLC</organization> 
+	   <address1>6070 California Circle Apt 310</address1> 
+	   <address2></address2>
+	   <city>Rockville</city> 
+	   <state>MD</state> 
+	   <postalCode>20852</postalCode> 
+	 </returnAddress>
+	 <ancillaryEndorsement></ancillaryEndorsement>
+	 <recipients> 
+	   <address> 
+	     <name>Don Diego de las Vegas</name> 
+	   	 <organization>Zorro Inc</organization> 
+	   	 <address1>6010 California Circle Apt 110</address1> 
+	     <address2></address2>
+	     <address3></address3>
+	     <city>Rockville</city> 
+	     <state>MD</state> 
+	     <postalCode>20852</postalCode> 
+	     <country/> 
+		 <c2m_uniqueid/>
+	  </address> 
+	  <address> 
+	     <name>Ezmeralda Franxas</name> 
+	   	 <organization>Church Choir</organization> 
+	   	 <address1>6010 California Circle Apt 210</address1> 
+	     <address2></address2>
+	     <address3></address3>
+	     <city>Rockville</city> 
+	     <state>MD</state> 
+	     <postalCode>20852</postalCode> 
+	     <country/> 
+		 <c2m_uniqueid/>
+	  </address> 
+	</recipients>
+  </job>
+   <job> 
+     <startingPage>20</startingPage> 
+	 <endingPage>24</endingPage>
+	 <printProductionOptions> 
+	   <documentClass>Letter 8.5 x 11</documentClass>
+	   <layout>Address on Separate Page</layout>
+	   <productionTime>Next Day</productionTime>
+	   <envelope>#10 Double Window</envelope> 
+	   <color>Black and White</color> 
+	   <paperType>White 24#</paperType> 
+	   <printOption>Printing One side</printOption> 
+	   <mailClass>First Class</mailClass>
+	 </printProductionOptions> 
+	 <returnAddress> 
+	   <name>Mahesh Lavannis</name> 
+	   <organization>C2M LLC</organization> 
+	   <address1>6070 California Circle Apt 310</address1> 
+	   <address2></address2>
+	   <city>Rockville</city> 
+	   <state>MD</state> 
+	   <postalCode>20852</postalCode> 
+	 </returnAddress>
+	 <ancillaryEndorsement></ancillaryEndorsement>
+	 <recipients> 
+	   <address> 
+	     <name>Andy Roberts</name> 
+	   	 <organization>Cricket Inc</organization> 
+	   	 <address1>6010 California Circle Apt 110</address1> 
+	     <address2></address2>
+	     <address3></address3>
+	     <city>Rockville</city> 
+	     <state>MD</state> 
+	     <postalCode>20852</postalCode> 
+	     <country/> 
+		 <c2m_uniqueid/>
+	  </address> 
+	  <address> 
+	     <name>Francesca Hourids</name> 
+	   	 <organization>Cookies Choir</organization> 
+	   	 <address1>6010 California Circle Apt 210</address1> 
+	     <address2></address2>
+	     <address3></address3>
+	     <city>Rockville</city> 
+	     <state>MD</state> 
+	     <postalCode>20852</postalCode> 
+	     <country/> 
+		 <c2m_uniqueid/>
+	  </address> 
+	</recipients>
+  </job>
+ </batch>
