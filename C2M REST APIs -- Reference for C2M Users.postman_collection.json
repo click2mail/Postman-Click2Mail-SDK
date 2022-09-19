@@ -2,7 +2,8 @@
 	"info": {
 		"_postman_id": "c2b699f9-b9f0-4f22-b0e6-d882db633a4a",
 		"name": "C2M REST APIs -- Reference for C2M Users",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1952778"
 	},
 	"item": [
 		{
@@ -845,7 +846,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "<addresses>\n   <address>\n      <name>John Doe</name>\n      <address1>6010 California Circle Apt 310</address1>\n      <city>Rockville</city>\n      <state>MD</state>\n      <zip>20852</zip>\n   </address>\n   <address>\n      <name>Joe Balley</name>\n      <address1>6010 California Circle Apt 310</address1>\n      <city>Sockville</city>\n      <state>MD</state>\n      <zip>20852</zip>\n   </address>\n   <address>\n      <name>Anto Nee</name>\n      <city>Capsi</city>\n      <state>DD</state>\n      <zip>FDGCD</zip>\n   </address>\n   <address>\n      <name>Jenny Hill</name>\n      <address1>3000 Homestead Ave</address1>\n      <city>Holyoke</city>\n      <state>MA</state>\n      <postalCode>01040</postalCode>\n   </address>\n   <address>\n      <name>Jane Hise</name>\n      <address1>100 Covery</address1>\n      <city>Carbona</city>\n      <state>DF</state>\n      <zip>12 AB345</zip>\n   </address>\n   <address>\n      <name>Claire LaRouge</name>\n      <address1>69 Saint Louis</address1>\n      <city>Québec</city>\n      <state>QC</state>\n      <zip>G1R 3Z2</zip>\n   </address>\n   <address>\n      <name>Claire LaRouge</name>\n      <address1>69 Saint Louis</address1>\n      <city>Québec</city>\n      <state>QC</state>\n      <zip>G1R 3Z2</zip>\n      <country>CANADA</country>\n   </address>\n</addresses>",
+							"raw": "<addresses>\n    <address>\n        <name>Tiara Lewis</name>\n        <address1>Geico Ctr Geico 1</address1>\n        <city>Macon</city>\n        <state>GA</state>\n        <zip>31296</zip>\n    </address>\n    <address>\n        <name>Suzanne Cowan</name>\n        <address1>Csn 1818</address1>\n        <city>Alpharetta</city>\n        <state>GA</state>\n        <zip>30023</zip>\n    </address>\n   <address>\n      <name>John Doe</name>\n      <address1>6010 California Circle Apt 310</address1>\n      <city>Rockville</city>\n      <state>MD</state>\n      <zip>20852</zip>\n   </address>\n   <address>\n      <name>Joe Balley</name>\n      <address1>6010 California Circle Apt 310</address1>\n      <city>Sockville</city>\n      <state>MD</state>\n      <zip>20852</zip>\n   </address>\n   <address>\n      <name>Anto Nee</name>\n      <city>Capsi</city>\n      <state>DD</state>\n      <zip>FDGCD</zip>\n   </address>\n   <address>\n      <name>Jenny Hill</name>\n      <address1>3000 Homestead Ave</address1>\n      <city>Holyoke</city>\n      <state>MA</state>\n      <postalCode>01040</postalCode>\n   </address>\n   <address>\n      <name>Jane Hise</name>\n      <address1>100 Covery</address1>\n      <city>Carbona</city>\n      <state>DF</state>\n      <zip>12 AB345</zip>\n   </address>\n   <address>\n      <name>Claire LaRouge</name>\n      <address1>69 Saint Louis</address1>\n      <city>Québec</city>\n      <state>QC</state>\n      <zip>G1R 3Z2</zip>\n   </address>\n   <address>\n      <name>Claire LaRouge</name>\n      <address1>69 Saint Louis</address1>\n      <city>Québec</city>\n      <state>QC</state>\n      <zip>G1R 3Z2</zip>\n      <country>CANADA</country>\n   </address>\n</addresses>",
 							"options": {
 								"raw": {
 									"language": "xml"
@@ -1391,6 +1392,252 @@
 							]
 						},
 						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/xml"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/xml"
+							},
+							{
+								"key": "user-agent",
+								"type": "text",
+								"value": "my-app/0.0.1"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/addressLists/{{addressListId}}",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"addressLists",
+								"{{addressListId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/molpro/addressLists/address2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(200);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var status = responseJson[\"addressList\"][\"status\"];",
+									"    tests[\"status = \" + status] = true; // this is for printing value to console",
+									"    pm.expect(status).to.eql(\"3\");",
+									"",
+									"    var description = responseJson[\"addressList\"][\"description\"];",
+									"    tests[\"description = \" + description] = true; // this is for printing value to console",
+									"    pm.expect(description).to.eql(\"CASS Standardized\");",
+									"    ",
+									"    var addressListId = responseJson[\"addressList\"][\"id\"];",
+									"    postman.setGlobalVariable(\"addressListId\", addressListId) ",
+									"    tests[\"addressListId = \" + addressListId] = true; // this is for printing value to console",
+									"    ",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/xml",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text"
+							},
+							{
+								"key": "user-agent",
+								"value": "my-app/0.0.1",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<addressList>\n    <addresses>\n        <address>\n            <id>507448</id>\n            <unmappedField>\n                <key>First_name</key>\n                <value>Joe</value>\n            </unmappedField>\n            <unmappedField>\n                <key>Last_name</key>\n                <value>Tempes</value>\n            </unmappedField>\n            <unmappedField>\n                <key>Organization</key>\n                <value>sample org</value>\n            </unmappedField>\n            <unmappedField>\n                <key>Address1</key>\n                <value>6010 California Circle</value>\n            </unmappedField>\n            <unmappedField>\n                <key>Address2</key>\n                <value>Apt 32</value>\n            </unmappedField>\n            <unmappedField>\n                <key>Address3</key>\n                <value></value>\n            </unmappedField>\n            <unmappedField>\n                <key>City</key>\n                <value>Rockville</value>\n            </unmappedField>\n            <unmappedField>\n                <key>State</key>\n                <value>MD</value>\n            </unmappedField>\n            <unmappedField>\n                <key>Zip</key>\n                <value>20852</value>\n            </unmappedField>\n            <unmappedField>\n                <key>Country_non-US</key>\n                <value></value>\n            </unmappedField>\n        </address>\n    </addresses>\n</addressList>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/addressLists/address2?baseAddressListId={{addressListId}}",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"addressLists",
+								"address2"
+							],
+							"query": [
+								{
+									"key": "baseAddressListId",
+									"value": "{{addressListId}}"
+								},
+								{
+									"key": "input",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/molpro/addressLists",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/addressLists?baseAddressListId={{addressListId}}&id=14264242&id=518156522",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"addressLists"
+							],
+							"query": [
+								{
+									"key": "baseAddressListId",
+									"value": "{{addressListId}}"
+								},
+								{
+									"key": "id",
+									"value": "14264242"
+								},
+								{
+									"key": "id",
+									"value": "518156522"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/molpro/addressLists/{id}",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(200);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var status = responseJson[\"addressList\"][\"status\"];",
+									"    tests[\"status = \" + status] = true; // this is for printing value to console",
+									"    pm.expect(status).to.eql(\"3\");",
+									"",
+									"    var description = responseJson[\"addressList\"][\"description\"];",
+									"    tests[\"description = \" + description] = true; // this is for printing value to console",
+									"    pm.expect(description).to.eql(\"CASS Standardized\");",
+									"    ",
+									"    var addressListId = responseJson[\"addressList\"][\"id\"];",
+									"    postman.setGlobalVariable(\"addressListId\", addressListId) ",
+									"    tests[\"addressListId = \" + addressListId] = true; // this is for printing value to console",
+									"    ",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
 						"header": [
 							{
 								"key": "Content-Type",
@@ -3264,7 +3511,7 @@
 								{
 									"key": "file",
 									"type": "file",
-									"src": "/Users/mlavannis/Downloads/BraswellMariaJania113617(B1)-print (1).pdf"
+									"src": "/Users/mlavannis/Documents/Hello World S3.pdf"
 								},
 								{
 									"key": "documentName",
@@ -3622,7 +3869,7 @@
 								},
 								{
 									"key": "appSignature",
-									"value": "Click2Mail Hub Podio",
+									"value": "Test Postman",
 									"type": "text"
 								}
 							]
@@ -6267,6 +6514,99 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "/molpro/jobs/jobTemplate/submit",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(201);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var status = responseJson[\"job\"][\"status\"];",
+									"    tests[\"status = \" + status] = true; // this is for printing value to console",
+									"    pm.expect(status).to.eql(\"0\");",
+									"",
+									"    var description = responseJson[\"job\"][\"description\"];",
+									"    tests[\"description = \" + description] = true; // this is for printing value to console",
+									"    pm.expect(description).to.eql(\"Created\");",
+									"    ",
+									"    var jobId = responseJson[\"job\"][\"id\"];",
+									"    postman.setGlobalVariable(\"jobId\", jobId) ",
+									"    tests[\"jobId = \" + jobId] = true; // this is for printing value to console",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "templateName",
+									"value": "testJobTemplate",
+									"type": "text"
+								},
+								{
+									"key": "documentId",
+									"value": "{{letterDocId}}",
+									"type": "text"
+								},
+								{
+									"key": "listId",
+									"value": "{{addressListId}}",
+									"type": "text"
+								},
+								{
+									"key": "billingType",
+									"value": "User Credit",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/jobs/jobTemplate/submit",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"jobs",
+								"jobTemplate",
+								"submit"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		},
@@ -6274,7 +6614,7 @@
 			"name": "Projects",
 			"item": [
 				{
-					"name": "/molpro/projects/<id>/",
+					"name": "/molpro/projects/jobs",
 					"event": [
 						{
 							"listen": "test",
@@ -6319,7 +6659,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://{{subdomain}}.click2mail.com/molpro/projects/jobs?projectName=July 2020",
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/projects/jobs?projectName=March 2022",
 							"protocol": "https",
 							"host": [
 								"{{subdomain}}",
@@ -6334,7 +6674,7 @@
 							"query": [
 								{
 									"key": "projectName",
-									"value": "July 2020"
+									"value": "March 2022"
 								}
 							]
 						}
