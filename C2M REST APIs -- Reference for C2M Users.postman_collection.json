@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "c2b699f9-b9f0-4f22-b0e6-d882db633a4a",
+		"_postman_id": "63fe9d3b-cddf-4fa7-bc39-ae62d96f82fe",
 		"name": "C2M REST APIs -- Reference for C2M Users",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "1952778"
@@ -927,18 +927,18 @@
 						"header": [
 							{
 								"key": "Content-Type",
-								"type": "text",
-								"value": "application/xml"
+								"value": "application/xml",
+								"type": "text"
 							},
 							{
 								"key": "Accept",
-								"type": "text",
-								"value": "application/xml"
+								"value": "application/xml",
+								"type": "text"
 							},
 							{
 								"key": "user-agent",
-								"type": "text",
-								"value": "my-app/0.0.1"
+								"value": "my-app/0.0.1",
+								"type": "text"
 							}
 						],
 						"body": {
@@ -1203,18 +1203,18 @@
 						"header": [
 							{
 								"key": "Content-Type",
-								"type": "text",
-								"value": "application/xml"
+								"value": "application/xml",
+								"type": "text"
 							},
 							{
 								"key": "Accept",
-								"type": "text",
-								"value": "application/xml"
+								"value": "application/xml",
+								"type": "text"
 							},
 							{
 								"key": "user-agent",
-								"type": "text",
-								"value": "my-app/0.0.1"
+								"value": "my-app/0.0.1",
+								"type": "text"
 							}
 						],
 						"body": {
@@ -1298,18 +1298,18 @@
 						"header": [
 							{
 								"key": "Content-Type",
-								"type": "text",
-								"value": "application/xml"
+								"value": "application/xml",
+								"type": "text"
 							},
 							{
 								"key": "Accept",
-								"type": "text",
-								"value": "application/xml"
+								"value": "application/xml",
+								"type": "text"
 							},
 							{
 								"key": "user-agent",
-								"type": "text",
-								"value": "my-app/0.0.1"
+								"value": "my-app/0.0.1",
+								"type": "text"
 							}
 						],
 						"body": {
@@ -1395,18 +1395,18 @@
 						"header": [
 							{
 								"key": "Content-Type",
-								"type": "text",
-								"value": "application/xml"
+								"value": "application/xml",
+								"type": "text"
 							},
 							{
 								"key": "Accept",
-								"type": "text",
-								"value": "application/xml"
+								"value": "application/xml",
+								"type": "text"
 							},
 							{
 								"key": "user-agent",
-								"type": "text",
-								"value": "my-app/0.0.1"
+								"value": "my-app/0.0.1",
+								"type": "text"
 							}
 						],
 						"body": {
@@ -1641,18 +1641,18 @@
 						"header": [
 							{
 								"key": "Content-Type",
-								"type": "text",
-								"value": "application/xml"
+								"value": "application/xml",
+								"type": "text"
 							},
 							{
 								"key": "Accept",
-								"type": "text",
-								"value": "application/xml"
+								"value": "application/xml",
+								"type": "text"
 							},
 							{
 								"key": "user-agent",
-								"type": "text",
-								"value": "my-app/0.0.1"
+								"value": "my-app/0.0.1",
+								"type": "text"
 							}
 						],
 						"body": {
@@ -2480,18 +2480,18 @@
 						"header": [
 							{
 								"key": "user-agent",
-								"type": "text",
-								"value": "my-app/0.0.1"
+								"value": "my-app/0.0.1",
+								"type": "text"
 							},
 							{
 								"key": "Accept",
-								"type": "text",
-								"value": "application/xml"
+								"value": "application/xml",
+								"type": "text"
 							},
 							{
 								"key": "Content-Type",
-								"type": "text",
 								"value": "multipart/form-data",
+								"type": "text",
 								"disabled": true
 							}
 						],
@@ -2589,18 +2589,18 @@
 						"header": [
 							{
 								"key": "user-agent",
-								"type": "text",
-								"value": "my-app/0.0.1"
+								"value": "my-app/0.0.1",
+								"type": "text"
 							},
 							{
 								"key": "Accept",
-								"type": "text",
-								"value": "application/xml"
+								"value": "application/xml",
+								"type": "text"
 							},
 							{
 								"key": "Content-Type",
-								"type": "text",
-								"value": "multipart/form-data"
+								"value": "multipart/form-data",
+								"type": "text"
 							}
 						],
 						"body": {
@@ -2791,18 +2791,18 @@
 						"header": [
 							{
 								"key": "user-agent",
-								"type": "text",
-								"value": "my-app/0.0.1"
+								"value": "my-app/0.0.1",
+								"type": "text"
 							},
 							{
 								"key": "Accept",
-								"type": "text",
-								"value": "application/xml"
+								"value": "application/xml",
+								"type": "text"
 							},
 							{
 								"key": "Content-Type",
-								"type": "text",
-								"value": "multipart/form-data"
+								"value": "multipart/form-data",
+								"type": "text"
 							}
 						],
 						"body": {
@@ -2898,13 +2898,13 @@
 						"header": [
 							{
 								"key": "Content-Type",
-								"type": "text",
-								"value": "application/xml"
+								"value": "application/xml",
+								"type": "text"
 							},
 							{
 								"key": "Accept",
-								"type": "text",
-								"value": "application/xml"
+								"value": "application/xml",
+								"type": "text"
 							}
 						],
 						"body": {
@@ -2987,18 +2987,18 @@
 						"header": [
 							{
 								"key": "user-agent",
-								"type": "text",
-								"value": "my-app/0.0.1"
+								"value": "my-app/0.0.1",
+								"type": "text"
 							},
 							{
 								"key": "Accept",
-								"type": "text",
-								"value": "application/xml"
+								"value": "application/xml",
+								"type": "text"
 							},
 							{
 								"key": "Content-Type",
-								"type": "text",
-								"value": "multipart/form-data"
+								"value": "multipart/form-data",
+								"type": "text"
 							}
 						],
 						"body": {
@@ -3095,18 +3095,18 @@
 						"header": [
 							{
 								"key": "user-agent",
-								"type": "text",
-								"value": "my-app/0.0.1"
+								"value": "my-app/0.0.1",
+								"type": "text"
 							},
 							{
 								"key": "Accept",
-								"type": "text",
-								"value": "application/xml"
+								"value": "application/xml",
+								"type": "text"
 							},
 							{
 								"key": "Content-Type",
-								"type": "text",
-								"value": "multipart/form-data"
+								"value": "multipart/form-data",
+								"type": "text"
 							}
 						],
 						"body": {
@@ -3203,18 +3203,18 @@
 						"header": [
 							{
 								"key": "user-agent",
-								"type": "text",
-								"value": "my-app/0.0.1"
+								"value": "my-app/0.0.1",
+								"type": "text"
 							},
 							{
 								"key": "Accept",
-								"type": "text",
-								"value": "application/xml"
+								"value": "application/xml",
+								"type": "text"
 							},
 							{
 								"key": "Content-Type",
-								"type": "text",
-								"value": "multipart/form-data"
+								"value": "multipart/form-data",
+								"type": "text"
 							}
 						],
 						"body": {
@@ -3699,18 +3699,18 @@
 						"header": [
 							{
 								"key": "user-agent",
-								"type": "text",
-								"value": "my-app/0.0.1"
+								"value": "my-app/0.0.1",
+								"type": "text"
 							},
 							{
 								"key": "Accept",
-								"type": "text",
-								"value": "application/xml"
+								"value": "application/xml",
+								"type": "text"
 							},
 							{
 								"key": "Content-Type",
-								"type": "text",
-								"value": "multipart/form-data"
+								"value": "multipart/form-data",
+								"type": "text"
 							}
 						],
 						"body": {
@@ -5831,18 +5831,18 @@
 						"header": [
 							{
 								"key": "Content-Type",
-								"type": "text",
-								"value": "application/xml"
+								"value": "application/xml",
+								"type": "text"
 							},
 							{
 								"key": "Accept",
-								"type": "text",
-								"value": "application/xml"
+								"value": "application/xml",
+								"type": "text"
 							},
 							{
 								"key": "user-agent",
-								"type": "text",
-								"value": "my-app/0.0.1"
+								"value": "my-app/0.0.1",
+								"type": "text"
 							}
 						],
 						"body": {
@@ -6747,6 +6747,331 @@
 		{
 			"name": "Templates",
 			"item": []
+		},
+		{
+			"name": "Product Options",
+			"item": [
+				{
+					"name": "/molpro/productOptions",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(200);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var list = (responseJson.projects.projectList).project.length;",
+									"    tests[\"list = \" + list] = true; ",
+									"    for (var i = 0; i < list; i++) ",
+									"        {",
+									"        var counter = responseJson.projects.projectList.project[i];",
+									"        tests[\"projectName = \" + counter.name + \", jobs = \" + counter.jobsInProject] = true; ",
+									"       }",
+									"   ",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/productOptions?documentClass=Letter 8.5 X 11&skipBulkPrint=false",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"productOptions"
+							],
+							"query": [
+								{
+									"key": "documentClass",
+									"value": "Letter 8.5 X 11"
+								},
+								{
+									"key": "skipBulkPrint",
+									"value": "false"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/molpro/productOptions/advanced",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(200);",
+									"",
+									"    var responseJson = xml2Json(responseBody);",
+									"",
+									"    var status = responseJson[\"productOptions\"][\"status\"];",
+									"    tests[\"status = \" + status] = true; // this is for printing value to console",
+									"    pm.expect(status).to.eql(\"0\");",
+									"",
+									"    var description = responseJson[\"productOptions\"][\"description\"];",
+									"    tests[\"description = \" + description] = true; // this is for printing value to console",
+									"    pm.expect(description).to.eql(\"Success\");",
+									"    ",
+									"    var layouts = responseJson[\"productOptions\"][\"layout\"];",
+									"    pm.expect(layouts.length).to.eql(4);",
+									"    ",
+									"    var envelopes = responseJson[\"productOptions\"][\"envelope\"];",
+									"    pm.expect(envelopes.length).to.eql(6);",
+									"    ",
+									"    var productionTime = responseJson[\"productOptions\"][\"productionTime\"];",
+									"    pm.expect(productionTime).to.eql(\"Next Day\");",
+									"    ",
+									"    var paperTypes = responseJson[\"productOptions\"][\"paperType\"];",
+									"    pm.expect(paperTypes.length).to.eql(5);",
+									"    ",
+									"    var printColors = responseJson[\"productOptions\"][\"printColor\"];",
+									"    pm.expect(printColors.length).to.eql(2);",
+									"    ",
+									"    var printOptions = responseJson[\"productOptions\"][\"printOption\"];",
+									"    pm.expect(printOptions.length).to.eql(2);",
+									"    ",
+									"    var mailClasses = responseJson[\"productOptions\"][\"mailClass\"];",
+									"    pm.expect(mailClasses.length).to.eql(5);",
+									"    ",
+									"    var coverPageProduct = responseJson[\"productOptions\"][\"coverPageProduct\"];",
+									"    pm.expect(coverPageProduct).to.eql(\"false\");",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://{{subdomain}}.click2mail.com/molpro/productOptions/advanced",
+							"protocol": "https",
+							"host": [
+								"{{subdomain}}",
+								"click2mail",
+								"com"
+							],
+							"path": [
+								"molpro",
+								"productOptions",
+								"advanced"
+							],
+							"query": [
+								{
+									"key": "documentClass",
+									"value": "Letter 8.5 x 11",
+									"disabled": true
+								},
+								{
+									"key": "layout",
+									"value": "Address on Separate Page",
+									"disabled": true
+								},
+								{
+									"key": "envelope",
+									"value": "%2310 Double Window",
+									"disabled": true
+								},
+								{
+									"key": "paperType",
+									"value": "Canary 24%23",
+									"disabled": true
+								},
+								{
+									"key": "mailClass",
+									"value": "First Class",
+									"disabled": true
+								},
+								{
+									"key": "printOption",
+									"value": "Printing One side",
+									"disabled": true
+								},
+								{
+									"key": "enclosure",
+									"value": "%239 SASE Reply Envelope - Window",
+									"disabled": true
+								},
+								{
+									"key": "color",
+									"value": "Black and White",
+									"disabled": true
+								},
+								{
+									"key": "skipBulkPrint",
+									"value": "false",
+									"disabled": true
+								},
+								{
+									"key": "documentClass",
+									"value": "Postcard 4.25 x 6",
+									"disabled": true
+								},
+								{
+									"key": "documentClass",
+									"value": "Priority Mail Letter 8.5 x 11",
+									"disabled": true
+								},
+								{
+									"key": "documentClass",
+									"value": "Certified Letter 8.5 x 11",
+									"disabled": true
+								},
+								{
+									"key": "documentClass",
+									"value": "Reply Letter 8.5 x 11",
+									"disabled": true
+								},
+								{
+									"key": "documentClass",
+									"value": "Certified Letter Radiation Warning",
+									"disabled": true
+								},
+								{
+									"key": "documentClass",
+									"value": "Certified Letter Address First Page",
+									"disabled": true
+								},
+								{
+									"key": "documentClass",
+									"value": "Notecard 4.25 x 5.5",
+									"disabled": true
+								},
+								{
+									"key": "documentClass",
+									"value": "Letter 8.5 x 11 2 Reply Envelopes - Labels",
+									"disabled": true
+								},
+								{
+									"key": "documentClass",
+									"value": "Rack Card 4 x 9",
+									"disabled": true
+								},
+								{
+									"key": "documentClass",
+									"value": "Flyer 8.5 x 11",
+									"disabled": true
+								},
+								{
+									"key": "documentClass",
+									"value": "Brochure 11 x 8.5",
+									"disabled": true
+								},
+								{
+									"key": "documentClass",
+									"value": "Secure Self Mailer",
+									"disabled": true
+								},
+								{
+									"key": "documentClass",
+									"value": "Booklet Self Mailer 8.5 x 11",
+									"disabled": true
+								},
+								{
+									"key": "documentClass",
+									"value": "Reply Mail Postcard 4.25 x 6",
+									"disabled": true
+								},
+								{
+									"key": "documentClass",
+									"value": "Letter 8.5 x 11 Reply Envelope - Labels",
+									"disabled": true
+								},
+								{
+									"key": "documentClass",
+									"value": "Certified Self Mailer 8.5 x 11",
+									"disabled": true
+								},
+								{
+									"key": "documentClass",
+									"value": "Priority Express Letter  8.5 x 11",
+									"disabled": true
+								},
+								{
+									"key": "documentClass",
+									"value": "EDDM Mailer 8.5 x 12",
+									"disabled": true
+								},
+								{
+									"key": "documentClass",
+									"value": "Shipped Brochure",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	],
 	"event": [
